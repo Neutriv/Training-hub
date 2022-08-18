@@ -1,0 +1,2583 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    127013,       2575]
+NotebookOptionsPosition[    123263,       2511]
+NotebookOutlinePosition[    123695,       2527]
+CellTagsIndexPosition[    123652,       2524]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"CellularAutomaton", "[", 
+  RowBox[{"30", ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "1", ",", " ", "0"}], "}"}], ",", "2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8204202158405056`*^9, 3.820420215855482*^9}, {
+  3.820512728123358*^9, 3.8205127491056433`*^9}, {3.820512782164747*^9, 
+  3.8205127822956896`*^9}, {3.8205728916589265`*^9, 3.8205728918168364`*^9}, {
+  3.820573013466324*^9, 3.820573029681059*^9}, {3.8205730634257765`*^9, 
+  3.8205730635646973`*^9}, {3.8205764865661182`*^9, 3.8205764910149484`*^9}},
+ CellLabel->
+  "In[122]:=",ExpressionUUID->"6bece105-22a0-43e5-baf8-6c2e80a96446"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "1", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "0", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "1", ",", "1"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.820512749985591*^9, 3.8205127830470276`*^9, 3.8205728923655043`*^9, {
+   3.8205730141579304`*^9, 3.820573030154788*^9}, 3.8205730640344296`*^9, {
+   3.8205764871128063`*^9, 3.8205764915376472`*^9}},
+ CellLabel->
+  "Out[122]=",ExpressionUUID->"8f45d8b6-501b-4298-9ced-c9b96cf71d45"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RulePlot", "[", 
+  RowBox[{"CellularAutomaton", "[", "30", "]"}], "]"}]], "Input",
+ CellChangeTimes->{3.82051273249415*^9, 3.8205729554324665`*^9, 
+  3.8205729975814013`*^9},
+ CellLabel->"In[26]:=",ExpressionUUID->"f2cb00f5-6524-4c24-9e14-0f7b18ecbc00"],
+
+Cell[BoxData[
+ GraphicsBox[{{InsetBox[
+     GraphicsBox[{
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[-3, 2], 0}, {-1.5, 0}]]}, 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[-1, 2], 0}, {-0.5, 0}]]}, 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[1, 2], 0}, {0.5, 0}]]}}, 
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[1], 
+         RectangleBox[
+          NCache[{Rational[-1, 2], Rational[-5, 4]}, {-0.5, -1.25}]]}}},
+      PlotRange->NCache[{{-2, 2}, {
+          Rational[-7, 4], 
+          Rational[3, 2]}}, {{-2, 2}, {-1.75, 1.5}}]], 
+     NCache[{0.6153846153846154, Rational[1, 2]}, {0.6153846153846154, 
+      0.5}], {Center, Center}, {1.2307692307692308, 1}], InsetBox[
+     GraphicsBox[{
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[-3, 2], 0}, {-1.5, 0}]]}, 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[-1, 2], 0}, {-0.5, 0}]]}, 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[1, 2], 0}, {0.5, 0}]]}}, 
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[1], 
+         RectangleBox[
+          NCache[{Rational[-1, 2], Rational[-5, 4]}, {-0.5, -1.25}]]}}},
+      PlotRange->NCache[{{-2, 2}, {
+          Rational[-7, 4], 
+          Rational[3, 2]}}, {{-2, 2}, {-1.75, 1.5}}]], 
+     NCache[{1.8461538461538463`, Rational[1, 2]}, {1.8461538461538463`, 
+      0.5}], {Center, Center}, {1.2307692307692308, 1}], InsetBox[
+     GraphicsBox[{
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[-3, 2], 0}, {-1.5, 0}]]}, 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[-1, 2], 0}, {-0.5, 0}]]}, 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[1, 2], 0}, {0.5, 0}]]}}, 
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[1], 
+         RectangleBox[
+          NCache[{Rational[-1, 2], Rational[-5, 4]}, {-0.5, -1.25}]]}}},
+      PlotRange->NCache[{{-2, 2}, {
+          Rational[-7, 4], 
+          Rational[3, 2]}}, {{-2, 2}, {-1.75, 1.5}}]], 
+     NCache[{3.076923076923077, Rational[1, 2]}, {3.076923076923077, 0.5}], {
+     Center, Center}, {1.2307692307692308, 1}], InsetBox[
+     GraphicsBox[{
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[-3, 2], 0}, {-1.5, 0}]]}, 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[-1, 2], 0}, {-0.5, 0}]]}, 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[1, 2], 0}, {0.5, 0}]]}}, 
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[0], 
+         RectangleBox[
+          NCache[{Rational[-1, 2], Rational[-5, 4]}, {-0.5, -1.25}]]}}},
+      PlotRange->NCache[{{-2, 2}, {
+          Rational[-7, 4], 
+          Rational[3, 2]}}, {{-2, 2}, {-1.75, 1.5}}]], 
+     NCache[{4.307692307692308, Rational[1, 2]}, {4.307692307692308, 0.5}], {
+     Center, Center}, {1.2307692307692308, 1}], InsetBox[
+     GraphicsBox[{
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[-3, 2], 0}, {-1.5, 0}]]}, 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[-1, 2], 0}, {-0.5, 0}]]}, 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[1, 2], 0}, {0.5, 0}]]}}, 
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[0], 
+         RectangleBox[
+          NCache[{Rational[-1, 2], Rational[-5, 4]}, {-0.5, -1.25}]]}}},
+      PlotRange->NCache[{{-2, 2}, {
+          Rational[-7, 4], 
+          Rational[3, 2]}}, {{-2, 2}, {-1.75, 1.5}}]], 
+     NCache[{5.538461538461538, Rational[1, 2]}, {5.538461538461538, 0.5}], {
+     Center, Center}, {1.2307692307692308, 1}], InsetBox[
+     GraphicsBox[{
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[-3, 2], 0}, {-1.5, 0}]]}, 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[-1, 2], 0}, {-0.5, 0}]]}, 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[1, 2], 0}, {0.5, 0}]]}}, 
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[0], 
+         RectangleBox[
+          NCache[{Rational[-1, 2], Rational[-5, 4]}, {-0.5, -1.25}]]}}},
+      PlotRange->NCache[{{-2, 2}, {
+          Rational[-7, 4], 
+          Rational[3, 2]}}, {{-2, 2}, {-1.75, 1.5}}]], 
+     NCache[{6.76923076923077, Rational[1, 2]}, {6.76923076923077, 0.5}], {
+     Center, Center}, {1.2307692307692308, 1}], InsetBox[
+     GraphicsBox[{
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[-3, 2], 0}, {-1.5, 0}]]}, 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[-1, 2], 0}, {-0.5, 0}]]}, 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[1, 2], 0}, {0.5, 0}]]}}, 
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[0], 
+         RectangleBox[
+          NCache[{Rational[-1, 2], Rational[-5, 4]}, {-0.5, -1.25}]]}}},
+      PlotRange->NCache[{{-2, 2}, {
+          Rational[-7, 4], 
+          Rational[3, 2]}}, {{-2, 2}, {-1.75, 1.5}}]], 
+     NCache[{8., Rational[1, 2]}, {8., 0.5}], {
+     Center, Center}, {1.2307692307692317, 1}], InsetBox[
+     GraphicsBox[{
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[-3, 2], 0}, {-1.5, 0}]]}, 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[-1, 2], 0}, {-0.5, 0}]]}, 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[1, 2], 0}, {0.5, 0}]]}}, 
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[1], 
+         RectangleBox[
+          NCache[{Rational[-1, 2], Rational[-5, 4]}, {-0.5, -1.25}]]}}},
+      PlotRange->NCache[{{-2, 2}, {
+          Rational[-7, 4], 
+          Rational[3, 2]}}, {{-2, 2}, {-1.75, 1.5}}]], 
+     NCache[{9.230769230769232, Rational[1, 2]}, {9.230769230769232, 0.5}], {
+     Center, Center}, {1.23076923076923, 1}]}, 
+   {GrayLevel[
+    0.8], {LineBox[{{0, 0}, {0, 1}}], 
+     LineBox[{{1.2307692307692308`, 0}, {1.2307692307692308`, 1}}], 
+     LineBox[{{2.4615384615384617`, 0}, {2.4615384615384617`, 1}}], 
+     LineBox[{{3.6923076923076925`, 0}, {3.6923076923076925`, 1}}], 
+     LineBox[{{4.923076923076923, 0}, {4.923076923076923, 1}}], 
+     LineBox[{{6.153846153846154, 0}, {6.153846153846154, 1}}], 
+     LineBox[{{7.384615384615385, 0}, {7.384615384615385, 1}}], 
+     LineBox[{{8.615384615384617, 0}, {8.615384615384617, 1}}], 
+     LineBox[{{9.846153846153847, 0}, {9.846153846153847, 1}}]}, {
+     LineBox[{{0, 0}, {9.846153846153847, 0}}], 
+     LineBox[{{0, 1}, {9.846153846153847, 1}}]}}}]], "Output",
+ CellChangeTimes->{3.820572999590254*^9},
+ CellLabel->"Out[26]=",ExpressionUUID->"31c08baf-ede0-4776-99cb-c269f9fc6668"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ArrayPlot", "[", 
+  RowBox[{"CellularAutomaton", "[", 
+   RowBox[{"30", ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", "1", "}"}], ",", "0"}], "}"}], ",", "50"}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.820420230607072*^9, 3.8204202306190453`*^9}, {
+   3.8205127954766846`*^9, 3.82051287859109*^9}, {3.82057138657261*^9, 
+   3.820571393412363*^9}, 3.82057290574486*^9, {3.8205729705668564`*^9, 
+   3.8205729842100415`*^9}, {3.82057310310923*^9, 3.8205731203515797`*^9}, {
+   3.820575881041255*^9, 3.8205758898755083`*^9}, 3.820578170611247*^9},
+ CellLabel->
+  "In[148]:=",ExpressionUUID->"7e3d13d4-55cf-4b7d-bb8e-07e44665ffd8"],
+
+Cell[BoxData[
+ GraphicsBox[RasterBox[CompressedData["
+1:eJy1lVFSwzAMRCVuwhm4CUdghm/u/0eLrd2VsWM3iUPJtImj9dNKyvvXz+fX
+m5l9PP6/7Xm4Pz7PU/3+OD//vP76u1dXxMVyo1zFfSsRLBaXBYxZbnpdEI8b
+49TdaKi4+vcLUjVK2WeNkjaHBVgXcTxwPQHWy+YiFYtlg7I5wwKsi1wiB1ge
+YQ3wErMBTZsb+IIoVHGgCTyhkQpNAFm6voSd4gDRAE9opCInYOKLR0KQO0FD
+4VnwMxU5ARNfkH4XeT5pjImNwtJWZdovJvLMHsPDisi8t8dKv6h8fCS8bJQ3
++ixH/aLykT0JHxXiodRVmfQL86XZU9vdRXakMukXXmb2JDxaZsQx9cU1X6bM
+6I3I85hj6oucPDNHAbLYDjTm/ZKnFtqSbdjtjxHLqF8wPGBxJeMUnnAoy6Bf
+MDyMsODwyPSKykG/eAyP+IKxiOcXNGb94t58Mczlw/4YsfR8MUkSTAq2JT9a
+lo4voiylxIJb1jjyRZWl/Vhwr6n0fUnKrLD++2OVpfUlKTsrbK0/RiytLwzK
+CgPfGZWOLzJNWGpl/QmNkS8yTZDFV/pjxKK+mEri9XWWQ1nUF5kmGO/nOZRF
+fUHHsNMvcCiLjlyO/MC4ptHzhSO/il/kUBadJhr8OgdCuvqSg9+h8d+X6MfX
+3h8LKsmX6JNr/dFRSb6A6zaOqqK+ROZu5Kgq6ks4c6tG68vZ98eCSop+P0dV
+SdF3aCRfNvghKuHLJo6qgjG/79Axv1Vlox+ispmjqOzXOMXxC/ECEP0=
+   "], {{0, 0}, {101, 51}}, {0, 1}],
+  Frame->Automatic,
+  FrameLabel->{None, None},
+  FrameTicks->{{None, None}, {None, None}},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, 
+    "DefaultGraphicsInteraction" -> {
+     "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+      "Effects" -> {
+       "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+        "Droplines" -> {
+         "freeformCursorMode" -> True, 
+          "placement" -> {"x" -> "All", "y" -> "None"}}}}, "DefaultPlotStyle" -> 
+    Automatic}]], "Output",
+ CellChangeTimes->{
+  3.8204202327448316`*^9, {3.8205127114119077`*^9, 3.820512879420597*^9}, {
+   3.8205713886843853`*^9, 3.820571394511735*^9}, {3.820572894830098*^9, 
+   3.8205729063814955`*^9}, {3.8205729621106706`*^9, 3.820572985708185*^9}, {
+   3.8205731038008347`*^9, 3.8205731210291915`*^9}, {3.82057588162992*^9, 
+   3.820575890581106*^9}, 3.8205781716688623`*^9},
+ CellLabel->
+  "Out[148]=",ExpressionUUID->"a5f3c368-ac4c-4cad-8d1a-9eb214fabb00"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.820420247019675*^9, 3.8204202470306873`*^9}, 
+   3.820572994476178*^9},ExpressionUUID->"aa6ebc8d-5eef-467a-a9ce-\
+3e5403e27e30"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RulePlot", "[", 
+  RowBox[{"CellularAutomaton", "[", "90", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8205759431162343`*^9, 3.8205759432021823`*^9}},
+ CellLabel->
+  "In[105]:=",ExpressionUUID->"5d4305b5-74cc-4784-b258-4ee48cbc95ce"],
+
+Cell[BoxData[
+ GraphicsBox[{{InsetBox[
+     GraphicsBox[{
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[-3, 2], 0}, {-1.5, 0}]]}, 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[-1, 2], 0}, {-0.5, 0}]]}, 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[1, 2], 0}, {0.5, 0}]]}}, 
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[1], 
+         RectangleBox[
+          NCache[{Rational[-1, 2], Rational[-5, 4]}, {-0.5, -1.25}]]}}},
+      PlotRange->NCache[{{-2, 2}, {
+          Rational[-7, 4], 
+          Rational[3, 2]}}, {{-2, 2}, {-1.75, 1.5}}]], 
+     NCache[{0.6153846153846154, Rational[1, 2]}, {0.6153846153846154, 
+      0.5}], {Center, Center}, {1.2307692307692308, 1}], InsetBox[
+     GraphicsBox[{
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[-3, 2], 0}, {-1.5, 0}]]}, 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[-1, 2], 0}, {-0.5, 0}]]}, 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[1, 2], 0}, {0.5, 0}]]}}, 
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[0], 
+         RectangleBox[
+          NCache[{Rational[-1, 2], Rational[-5, 4]}, {-0.5, -1.25}]]}}},
+      PlotRange->NCache[{{-2, 2}, {
+          Rational[-7, 4], 
+          Rational[3, 2]}}, {{-2, 2}, {-1.75, 1.5}}]], 
+     NCache[{1.8461538461538463`, Rational[1, 2]}, {1.8461538461538463`, 
+      0.5}], {Center, Center}, {1.2307692307692308, 1}], InsetBox[
+     GraphicsBox[{
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[-3, 2], 0}, {-1.5, 0}]]}, 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[-1, 2], 0}, {-0.5, 0}]]}, 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[1, 2], 0}, {0.5, 0}]]}}, 
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[1], 
+         RectangleBox[
+          NCache[{Rational[-1, 2], Rational[-5, 4]}, {-0.5, -1.25}]]}}},
+      PlotRange->NCache[{{-2, 2}, {
+          Rational[-7, 4], 
+          Rational[3, 2]}}, {{-2, 2}, {-1.75, 1.5}}]], 
+     NCache[{3.076923076923077, Rational[1, 2]}, {3.076923076923077, 0.5}], {
+     Center, Center}, {1.2307692307692308, 1}], InsetBox[
+     GraphicsBox[{
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[-3, 2], 0}, {-1.5, 0}]]}, 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[-1, 2], 0}, {-0.5, 0}]]}, 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[1, 2], 0}, {0.5, 0}]]}}, 
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[0], 
+         RectangleBox[
+          NCache[{Rational[-1, 2], Rational[-5, 4]}, {-0.5, -1.25}]]}}},
+      PlotRange->NCache[{{-2, 2}, {
+          Rational[-7, 4], 
+          Rational[3, 2]}}, {{-2, 2}, {-1.75, 1.5}}]], 
+     NCache[{4.307692307692308, Rational[1, 2]}, {4.307692307692308, 0.5}], {
+     Center, Center}, {1.2307692307692308, 1}], InsetBox[
+     GraphicsBox[{
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[-3, 2], 0}, {-1.5, 0}]]}, 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[-1, 2], 0}, {-0.5, 0}]]}, 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[1, 2], 0}, {0.5, 0}]]}}, 
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[0], 
+         RectangleBox[
+          NCache[{Rational[-1, 2], Rational[-5, 4]}, {-0.5, -1.25}]]}}},
+      PlotRange->NCache[{{-2, 2}, {
+          Rational[-7, 4], 
+          Rational[3, 2]}}, {{-2, 2}, {-1.75, 1.5}}]], 
+     NCache[{5.538461538461538, Rational[1, 2]}, {5.538461538461538, 0.5}], {
+     Center, Center}, {1.2307692307692308, 1}], InsetBox[
+     GraphicsBox[{
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[-3, 2], 0}, {-1.5, 0}]]}, 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[-1, 2], 0}, {-0.5, 0}]]}, 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[1, 2], 0}, {0.5, 0}]]}}, 
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[1], 
+         RectangleBox[
+          NCache[{Rational[-1, 2], Rational[-5, 4]}, {-0.5, -1.25}]]}}},
+      PlotRange->NCache[{{-2, 2}, {
+          Rational[-7, 4], 
+          Rational[3, 2]}}, {{-2, 2}, {-1.75, 1.5}}]], 
+     NCache[{6.76923076923077, Rational[1, 2]}, {6.76923076923077, 0.5}], {
+     Center, Center}, {1.2307692307692308, 1}], InsetBox[
+     GraphicsBox[{
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[-3, 2], 0}, {-1.5, 0}]]}, 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[-1, 2], 0}, {-0.5, 0}]]}, 
+        {GrayLevel[0], RectangleBox[NCache[{Rational[1, 2], 0}, {0.5, 0}]]}}, 
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[0], 
+         RectangleBox[
+          NCache[{Rational[-1, 2], Rational[-5, 4]}, {-0.5, -1.25}]]}}},
+      PlotRange->NCache[{{-2, 2}, {
+          Rational[-7, 4], 
+          Rational[3, 2]}}, {{-2, 2}, {-1.75, 1.5}}]], 
+     NCache[{8., Rational[1, 2]}, {8., 0.5}], {
+     Center, Center}, {1.2307692307692317, 1}], InsetBox[
+     GraphicsBox[{
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[-3, 2], 0}, {-1.5, 0}]]}, 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[-1, 2], 0}, {-0.5, 0}]]}, 
+        {GrayLevel[1], RectangleBox[NCache[{Rational[1, 2], 0}, {0.5, 0}]]}}, 
+       {EdgeForm[GrayLevel[
+         NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+        {GrayLevel[1], 
+         RectangleBox[
+          NCache[{Rational[-1, 2], Rational[-5, 4]}, {-0.5, -1.25}]]}}},
+      PlotRange->NCache[{{-2, 2}, {
+          Rational[-7, 4], 
+          Rational[3, 2]}}, {{-2, 2}, {-1.75, 1.5}}]], 
+     NCache[{9.230769230769232, Rational[1, 2]}, {9.230769230769232, 0.5}], {
+     Center, Center}, {1.23076923076923, 1}]}, 
+   {GrayLevel[
+    0.8], {LineBox[{{0, 0}, {0, 1}}], 
+     LineBox[{{1.2307692307692308`, 0}, {1.2307692307692308`, 1}}], 
+     LineBox[{{2.4615384615384617`, 0}, {2.4615384615384617`, 1}}], 
+     LineBox[{{3.6923076923076925`, 0}, {3.6923076923076925`, 1}}], 
+     LineBox[{{4.923076923076923, 0}, {4.923076923076923, 1}}], 
+     LineBox[{{6.153846153846154, 0}, {6.153846153846154, 1}}], 
+     LineBox[{{7.384615384615385, 0}, {7.384615384615385, 1}}], 
+     LineBox[{{8.615384615384617, 0}, {8.615384615384617, 1}}], 
+     LineBox[{{9.846153846153847, 0}, {9.846153846153847, 1}}]}, {
+     LineBox[{{0, 0}, {9.846153846153847, 0}}], 
+     LineBox[{{0, 1}, {9.846153846153847, 1}}]}}}]], "Output",
+ CellChangeTimes->{3.820575944262577*^9},
+ CellLabel->
+  "Out[105]=",ExpressionUUID->"ebf66ce6-1bb0-409b-a44e-52c5438ab348"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ArrayPlot", "[", 
+  RowBox[{"CellularAutomaton", "[", 
+   RowBox[{"90", ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", "1", "}"}], ",", "0"}], "}"}], ",", "1000"}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8205759343942175`*^9, 3.8205760016297655`*^9}},
+ CellLabel->
+  "In[149]:=",ExpressionUUID->"f3434710-46fd-4eb3-945f-a2c9f1ac61b7"],
+
+Cell[BoxData[
+ GraphicsBox[RasterBox[CompressedData["
+1:eJzt3VGO5DqzNVa1/eBxeEoewj8Bj9XD8Czsh1vAKQJVglop7WbstRIJXoI3
+Or4gpSzlIYj8P//X//1//a//7TiO//d/P47/5//4//+PP9+t/TPixYsXL168
++H8hfn1dJV68ePHixYv/F+LX9/V/Ubx48eLFixefjz+W9vq/KF68ePHixYvP
+x6/t9X9RvHjx4sWLF5+P/9v/fi9evHjx4sWL/5fijz9//3wgXrx48eLFi/9X
+4u88H4gXL168ePHi/5X4e/+eePHixYsXL/7fiD9uvu6SX3755Zdffvk/kf+4
++b5fkfzyyy+//PLLfz//19/5v23vVyS//PLLL7/88t/Pf9xs75Jffvnll19+
++T+R//if19/275Jffvnll19++T+R//jz/e/91f5d8ssvv/zyyy//J/Kvf++v
+9u+SX3755Zdffvk/kX8dv9q/S3755Zdffvnl/0T+Y3ldHb9Lfvnll19++eX/
+RP5jeV8dv0t++eWXX3755f9E/q+/+z/9/T8bv0t++eWXX3755f9E/mNpr47f
+Jb/88ssvv/zyfyL/2X+ff2r/QH755Zdffvnl/2T+48/vf//Pxu+SX3755Zdf
+fvk/kf/s7/+Tzyfyyy+//PLLL/+n8p/9/z9bj/zyyy+//PLL/5n8x8nrafLL
+L7/88ssv/yfyHyfvp8kvv/zyyy+//J/I//Uc8FP7NPnll19++eWX/xP5j5P2
+afLLL7/88ssv/yfyr/+9/q39A/nll19++eWX/5P5jz/fnwfW/tPkl19++eWX
+X/5P5F+fB958PpFffvnll19++T+Vf41/tx755Zdffvnll/8z+Y/l9Tb55Zdf
+fvnll/8T+Y/l/Tb55Zdffvnll/8z/+LxrX2b/PLLL7/88sv/mX/xe/s2+eWX
+X3755Zf/M/9iZv9Afvnll19++eX/ZP7U/oH88ssvv/zyy//ZfzFZj/zyyy+/
+/PLL/6l/MUt++eWXX3755f/Mv5h9palf/epXv/rVP6P+I/xOU7/61a9+9at/
+Rv1fzwmpNk396k+2aepXf7JNm1f/EW7T1J9t09SfbdPUn23T5tV//M8r1U9T
+v/rVr/5UP0390+o//nx/Xni7n6Z+9as/109Tv/pn1b8+L7zdT1O/+pP9NPWr
+P9lPm1f/+u+/3U9Tf7afpv5sP0392X7avPqP5fX2eJr61a9+9atf/TPqP5b3
+2+Np6le/+tWvfvXPqP/rueGn54enx9PUr/7/tm+Pp6lf/f9t3x5Pm1f/sbRv
+j6ep/3v79nia+r+3b4+nqf97+/Z42rz6z/77/tPjaepXv/rVnxpPU/+0+o8/
+vz8/PD2epn71qz83nqZ+9c+q/+z54enxNPWrPzmepn71J8fT5tV/lu/p8TT1
+Z8fT1J8dT1N/djxtXv3Hyevp+DT1q1/96le/+mfUf5y8n45PU7/61a9+9at/
+Rv1fzxE/tU/Hp6lf/b+1T8enqV/9v7VPx6fNq/84aZ+OT1P/7+3T8Wnq/719
+Oj5N/b+3T8enzat//e/9V//7/934NPWrX/3q/6n/dHya+qfVf/z5/jyx9p+O
+T1O/+tX/c//p+DT1q39W/evzxNXni7vxaepX/2/9p+PT1K/+3/pPx6fNq3/N
+f/V/z934NPX/3n86Pk39v/efjk9T/+/9p+PT5tV/LK+349PUr371q1/96p9R
+/7G8345PU7/61a9+9at/Rv1fzxV/+3xxNz5N/er/b/t2fJr61f/f9u34tHn1
+H0v7dnya+r+3b8enqf97+3Z8mvq/t2/Hp82r/+5///939g/+jvrVr371p+LT
+1D+t/rv//f/f2T/4O+pXv/pz8WnqV/+s+u8+X/xbzyfXqV/9yfg09as/GZ82
+r/67/3v+tXquUn82Pk392fg09Wfj0+bVv56nu/ranfrVr371q1/9M+o/br53
+p371q1/96lf/jPq/njP+tt2d+tV/p92d+tV/p93dvPqPm+3u1H+v3Z3677W7
+U/+9dnfz6l/3A672d6d+9atf/X/b3536p9V//Pn+vHG1vzv1q1/9f9/fnfrV
+P6v+9Xnjan936lf/nf7u1K/+O/3dzat//d93tb879d/r70799/q7U/+9/u7m
+1X8sr6vju1O/+tWvfvWrf0b9x/K+Or479atf/epXv/pn1P/13PHT88fZ+O7U
+r/7/tlfHd6d+9f+3vTq+u3n1H0t7dXx36v/eXh3fnfq/t1fHd6f+7+3V8d3N
+q/9sf2Cf/YO/o371q1/9fzu+O/VPq/9sf2Cf/YO/o371q//vx3enfvXPqv/s
++WOv55Pr1K/+O+O7U7/674zvbl79Z/97d6vnKvXfG9+d+u+N707998Z3N6/+
+9bzdfufv7lG/+tWvfvWrf0b9x8l7OvWrX/3qV7/6Z9T/9RzyUzud+tX/Wzud
++tX/WzvdvPqPk3Y69f/eTqf+39vp1P97O928+tf9gn33D/6O+tWvfvX/1J9O
+/dPqX/cL9t0/+DvqV7/6f+5Pp371z6p/fR7Z+/nkOvWr/7f+dOpX/2/96ebV
+v/7v372eq9T/e3869f/en079v/enm1f//ufv7lG/+tWvfvWrf0b9x/Juo371
+q1/96lf/jPr3P393j/rV/9+2jfrV/9+2zbz6j6Vto/7vbRv1f2/bqP9722Ze
+/XP2D/6O+tWvfvW3Uv+0+ufsH/wd9atf/b3Ur/5Z9c96PrlO/epvpn71N5tX
+/7R6rlJ/N/V3U3+3efWv5/HaXu3S859+tUvPf/rVLj3/6dc863m8tne79Pyn
+3+3S859+t0vPf/o9z9dzSmvbLj3/6bZdev7Tbbv0/KfbeY7ytl16/tNtu/T8
+p9t26flPt/Mc//Nq7bdLz3+63y49/+l+u/T8p/vzHH++P6+09dul5z/db5ee
+/3S/XXr+0/151ueVtn679Pyn++3S85/ut0vPf7o/z1pfW79dev7T/Xbp+U/3
+26XnP92f51hebePt0vOfHm+Xnv/0eLv0/KfH5zmWd9t4u/T8p8fbpec/Pd4u
+Pf/p8Xm+nlt+en6ZPt4uPf/p8Xbp+U+Pt0vPf3p8nmNp28bbpec/Pd4uPf/p
+8Xbp+U+Pz3O2vzB9vF16/tPj7dLznx5vl57/9Pg8x5/fn1+mj7dLz396vF16
+/tPj7dLznx6f5+z5Zfp4u/T8p8fbpec/Pd4uPf/p8XnO6p0+3i49/+nxdun5
+T4+3S89/enye4+Q1Pb5dev7T8e3S85+Ob5ee/3T8PMfJe3p8u/T8p+Pbpec/
+Hd8uPf/p+Hm+nmN+aqfHt0vPfzq+XXr+0/Ht0vOfjp/nOGmnx7dLz386vl16
+/tPx7dLzn46fZ91vuLr/sHt8u/T8p+Pbpec/Hd8uPf/p+HmOP9+fZ9b+9Ph2
+6flPx7dLz386vl16/tPx86zPM1efb3aPb5ee/3R8u/T8p+Pbpec/HT/PWv/V
++dg9vl16/tPx7dLzn45vl57/dPw8x/Jqi2+Xnv90fLv0/Kfj26XnPx0/z7G8
+2+Lbpec/Hd8uPf/p+Hbp+U/Hz/P1XPO3zze7x7dLz386vl16/tPx7dLzn46f
+51jatvh26flPx7dLz386vl16/tPx89zdf9g9vl16/tPx7dLzn45vl57/dPw8
+d/cfdo9vl57/dHy79Pyn49ul5z8dP8/d55vd49ul5z8d3y49/+n4dun5T8fP
+c3c+do9vl57/dHy79Pyn49ul5z8dP896nu/qa/f87dLzn87fLj3/6fzt0vOf
+zj/PcfO9e/526flP52+Xnv90/nbp+U/nn+frOedv293zt0vPfzp/u/T8p/O3
+S89/Ov88x8129/zt0vOfzt8uPf/p/O3S85/OP8+6H3G1v3v+dun5T+dvl57/
+dP526flP55/n+PP9eedqf/f87dLzn87fLj3/6fzt0vOfzj/P+rxztb97/nbp
++U/nb5ee/3T+dun5T+efZ52fq/3d87dLz386f7v0/Kfzt0vPfzr/PMfyujq+
+e/526flP52+Xnv90/nbp+U/nn+dY3lfHd8/fLj3/6fzt0vOfzt8uPf/p/PN8
+Pff89PxzNr57/nbp+U/nb5ee/3T+dun5T+ef51jaq+O752+Xnv90/nbp+U/n
+b5ee/3T+ec72J57ev0jnb5ee/3T+dun5T+dvl57/dP55zvYnnt6/SOdvl57/
+dP526flP52+Xnv90/nnOnn+efj5K52+Xnv90/nbp+U/nb5ee/3T+ec7m6+n5
+TOdvl57/dP526flP52+Xnv90/nnW835vn/9L52+Xnv90/nbp+U/nb5ee/3T+
+eY6T9/T87dLzn87fLj3/6fzt0vOfzj/P13PQT+30/O3S85/O3y49/+n87dLz
+n84/z3HSTs/fLj3/6fzt0vOfzt8uPf/p/POs+xVv71+k87dLz386f7v0/Kfz
+t0vPfzr/POt+xdv7F+n87dLzn87fLj3/6fzt0vOfzj/P+jz09vNROn+79Pyn
+87dLz386f7v0/Kfzz7PO39vzmc7fLj3/6fzt0vOfzt8uPf/p/POkz/+l87dL
+z386f7v0/Kfzt0vPfzr/PMfybsvfLj3/6fzt0vOfzt8uPf/p/POkz/+l87dL
+z386f7v0/Kfzt0vPfzr/PMfStuVvl57/dP526flP52+Xnv90/nnS+xfp/O3S
+85/O3y49/+n87dLzn84/T3r/Ip2/XXr+0/nbpec/nb9dev7T+edJPx+l87dL
+z386f7v0/Kfzt0vPfzr/POn5TOdvl57/dP526flP52+Xnv90/nnW84Bvv8iy
+/t2sfzfrP816HvDtN1nWv5v172b9p/l6Tkq1ZFn/bta/m/Wf5gi3ZFn/bta/
+m/WfZt3PeLtPlvXvZv27Wf9pjj/fn5fe7pNl/btZ/27Wf5r1eentPlnWv5v1
+72b9p1nn9+0+Wda/m/XvZv2nOZbX2+NkWf9u1r+b9Z/mWN5vj5Nl/btZ/27W
+f5qv56afnp+eHifL+nez/t2s/zTH0r49Tpb172b9u1n/ac72N54eJ8v6d7P+
+3az/NGf7G0+Pk2X9u1n/btZ/mrPnp6fHybL+3ax/N+s/zdl8Pz1OlvXvZv27
+Wf9p1vOCV88P3o0ny/p3s/7drP80x8n76XiyrH8369/N+k/z9Rz1U/t0PFnW
+v5v172b9pzlO2qfjybL+3ax/N+s/zbrfcXX/4248Wda/m/XvZv2nWfc7ru5/
+3I0ny/p3s/7drP806/PU1eeru/FkWf9u1r+b9Z9mnf+r63E3nizr3836d7P+
+09w9P+j84d6sfzfr3836T3Ms77fjybL+3ax/N+s/zd3zg84f7s36d7P+3az/
+NMfSvh1PlvXvZv27Wf9p7u5/2D/Zm/XvZv27Wf9p7u5/2D/Zm/XvZv27Wf9p
+7j5feT7bm/XvZv27Wf9p7q6H9dyb9e9m/btZ/2nW84RXX+zN+nez/t2s/zTr
+ecKrb/Zm/btZ/27Wf5qv56y/bdmb9e9m/btZ/2mOmy17s/7drH836z/Nuh9y
+tc/erH8369/N+k+z7odc7bM369/N+nez/tOsz1tX++zN+nez/t2s/zTr+lzt
+szfr3836d7P+05ydL3T+cDbr3836d7P+0xzL++o4e7P+3ax/N+s/zdn5QucP
+Z7P+3ax/N+s/zbG0V8fZm/XvZv27Wf9pzvZH7J/MZv27Wf9u1n+as/0R+yez
+Wf9u1r+b9Z/m7PnL89ls1r+b9e9m/ac5Wy/rOZv172b9u1n/adbzhs4fdrH+
+3ax/N+s/zXre0PnDLta/m/XvZv2nWc8bOn/Yxfp3s/7drP8063lD5w+7WP9u
+1r+b9Z9m3S+xf9LF+nez/t2s/zTrfon9ky7Wv5v172b9p1mfxzyfdbH+3ax/
+N+s/zbp+1rOL9e9m/btZ/2mcP+xm/btZ/27WfxrnD7tZ/27Wv5v1n8b5w27W
+v5v172b9p3H+sJv172b9u1n/aeyfdLP+3ax/N+s/jf2Tbta/m/XvZv2n8XzW
+zfp3s/7drP801rOb9e9m/btZ/2nOfh/Xa/aLbunrzyv7Ypr1PKJ315tu6evP
+2/3PJ309p2k7W7qlrz+t+59POrTVLd3S15822zLN8T8v/c4+3dLXn777n086
+/nx/XtPv6tMtff3pu//5pPV5Tb+rT7f09afv/ueT1vXV7+rTLX396Wf7THMs
+L+Nd43RLX3/G3f980rG8jXeN0y19/Rl3//NJX89tPz2/GZ89Trf09Wfc/c8n
+HUtrvGucbunrz3h2nGnO9leMzx6nW/r6M+7+55OOP78/vxmfPU639PVn3P3P
+J509vxmfPU639PVn3P3PJ52tt/HZ43RLX3/Gs+NMc5y8xM+Op1v6+hPv/ueT
+jpO3+NnxdEtff+Ld/3zS13PcT6342fF0S19/4t3/fNJx0oqfHU+39PUnPhvP
+NOt+y9X9F/F7x9Mtff2Jd//zScef789za1/87Hi6pa8/8e5/Pml9nrv6fCd+
+73i6pa8/8e5/Pmld/6vXg/i94+mWvv7EZ+OZ5lhe4rvi6Za+/sS7//mkY3mL
+74qnW/r6E+/+55O+nuv+9vlO/N7xdEtff+Ld/3zSsbTiu+Lplr7+xGfjmebu
+/ov4vePplr7+xLv/+aS7+y/i946nW/r6E+/+55PuPt+J3zuebunrT7z7n0+6
+ez2I3zuebunrT3w2nmnW84xXX/LvnZ9u6etPfvc/n3TcfMu/d366pa8/+d3/
+fNLXc97ftvLvnZ9u6etPfvc/n3TcbOXfOz/d0tef/Nn8TLPux1zty793frql
+rz/53f980vHn+/Pe1b78e+enW/r6k9/9zyetz3tX+/LvnZ9u6etPfvc/n7Re
+H1f78u+dn27p60/+bH6mOZbX1XH5985Pt/T1J7/7n086lvfVcfn3zk+39PUn
+v/ufT/p67vvp+e9sXP6989Mtff3J7/7nk46lvTou/9756Za+/uTP5meas/2Z
+p/dv5M/mp1v6+pPf/c8nne3PPL1/I382P93S15/87n8+6ez57+nnQ/mz+emW
+vv7kd//zSWfXy9PXk/zZ/HRLX3/yZ/MzzXre8e3zj/Jn89Mtff3J7/7nk46T
+t/yz89Mtff3J7/7nk76eA39q5Z+dn27p609+9z+fdJy08s/OT7f09Sd/Nj/T
+rPs1b+/fyJ/NT7f09Se/+59PWvdr3t6/kT+bn27p609+9z+ftD4Pvv18KH82
+P93S15/87n8+ab1+3r6e5M/mp1v6+pM/m59p0ucf5Xf+lJz09Se/+59POpa3
+/F356Za+/uR3//NJ6fOP8mfz0y19/cnv/ueTjqWVvys/3dLXn/zZ/EyT3r+R
+3/4ZOenrT373P5+U3r+R3/M5OenrT373P5+Ufj6U3/1MTvr6k9/9zyelryf5
+ISd9/ckPn7Seh3z7ldZeP93ar//2+plmPQ/59jutvX66tV//7fUzzddzYqpN
+a6+fbu3Xf3v9THOE27T2+unWfv231880637O2/209vrp1n79t9fPNMef78+L
+b/fT2uunW/v1314/06zPi2/309rrp1v79d9eP9Os19fb/bT2+unWfv231880
+x/J6ezytvX66tV//7fUzzbG83x5Pa6+fbu3Xf3v9TPP13PjT8+PT42nt9dOt
+/fpvr59pjqV9ezytvX66tV//7fUzzdn+ztPjae310639+m+vn2nO9neeHk9r
+r59u7dd/e/1Mc/b8+PR4Wnv9dGu//tvrZ5qz6+3p8bT2+unWfv23188063nJ
+q+cn78antddPt/brv71+pjlO3k/Hp7XXT7f267+9fqb5eo78qX06Pq29frq1
+X//t9TPNcdI+HZ/WXj/d2q//9vqZZt3vubr/czc+rb1+urVf/+31M82633N1
+/+dufFp7/XRrv/7b62ea9Xny6vPl3fi09vrp1n79t9fPNOv1d/V6vBuf1l4/
+3dqv//b6mebu+cndz1+210+39uu/vX6mOZb32/Fp7fXTrf36b6+fae6en9z9
+/GV7/XRrv/7b62eaY2nfjk9rr59u7dd/e/1Mc3f/Z/f9o/b66dZ+/bfXzzR3
+93923z9qr59u7dd/e/1Mc/f5cvfn0/b66dZ+/bfXzzR3r8fdr+f2+unWfv23
+188063nKq6/dtddPt/brv71+plnPU1597669frq1X//t9TPN13Pm37a7a6+f
+bu3Xf3v9THPcbHfXXj/d2q//9vqZZt0PutrfXXv9dGu//tvrZ5p1P+hqf3ft
+9dOt/fpvr59p1ufNq/3dtddPt/brv71+plmvz6v93bXXT7f267+9fqY5O185
+/fxle/10a7/+2+tnmmN5Xx3fXXv9dGu//tvrZ5qz85XTz1+210+39uu/vX6m
+OZb26vju2uunW/v1314/05ztD03fP2qvn27t1397/Uxztj80ff+ovX66tV//
+7fUzzdnz5/Tn0/b66dZ+/bfXzzRn1+v067m9frq1X//t9TPNet6y7fxle/10
+a7/+2+tnmvW8Zdv5y/b66dZ+/bfXzzTrecu285ft9dOt/fpvr59p1vOWbecv
+2+unW/v1314/06z7RW37R+310639+m+vn2nW/aK2/aP2+unWfv2318806/No
+2/Npe/10a7/+2+tnmvX6bbue2+unW/v1314/07Sfv2yvn27t1397/UzTfv6y
+vX66tV//7fUzTfv5y/b66dZ+/bfXzzTt5y/b66db+/XfXj/TtO8ftddPt/br
+v71+pmnfP2qvn27t1397/UzT/nzaXj/d2q//9vqZpv16bq+fbu3Xf3v9THP2
++8DTX9Asff+lXzDLeh6z7Q3N0vdf+g2zfD2ntrbQLH3/pVuY5ShvoVn6/ku3
+MMu6n9TWh2bp+y/dh1mOP9+fV9v60Cx9/6X7MMv6vNrWh2bp+y/dh1nW67ut
+D83S91+6D7Mcy6ttHJql77/0OMxyLO+2cWiWvv/S4zDL13PrT8+v08ehWfr+
+S4/DLMfSto1Ds/T9lx6HWc72l6aPQ7P0/Zceh1nO9pemj0Oz9P2XHodZzp5f
+p49Ds/T9lx6HWc6u9+nj0Cx9/6XHYZb1vObV85u7x0Oz9P2XjodZjpP39Hho
+lr7/0vEwy9dz7E/t9Hholr7/0vEwy3HSTo+HZun7Lx0Ps6z7TVf3n3aPh2bp
++y8dD7Os+01X9592j4dm6fsvHQ+zrM+zV59vd4+HZun7Lx0Ps6zX/9X7Yfd4
+aJa+/9LxMMvd85u7x0Oz9P2XjodZjuXdFg/N0vdfOh5muXt+c/d4aJa+/9Lx
+MMuxtG3x0Cx9/6XjYZa7+0+7x0Oz9P2XjodZ7u4/7R4PzdL3XzoeZrn7fLt7
+PDRL33/peJjl7v2wezw0S99/6XiYZT3PefW1e35olr7/0vlhlvU859X37vmh
+Wfr+S+eHWb6ec/+23T0/NEvff+n8MMtxs909PzRL33/p/DDLuh91tb97fmiW
+vv/S+WGWdT/qan/3/NAsff+l88Ms6/Pu1f7u+aFZ+v5L54dZ1vvjan/3/NAs
+ff+l88MsZ+c7nz7/mc4PzdL3Xzo/zHIs76vju+eHZun7L50fZjk73/n0+c90
+fmiWvv/S+WGWY2mvju+eH5ql7790fpjlbH/q6f2rdH5olr7/0vlhlrP9qaf3
+r9L5oVn6/kvnh1nOnn+ffj5O54dm6fsvnR9mObtfnr6f0vmhWfr+S+eHWdbz
+nm+f/0znh2bp+y+dH2ZZz3u+ff4znR+ape+/dH6YZT3v+fb5z3R+aJa+/9L5
+YZb1vOfb5z/T+aFZ+v5L54dZ1v2qt/ev0vmhWfr+S+eHWdb9qrf3r9L5oVn6
+/kvnh1nW5+G3n4/T+aFZ+v5L54dZ1vvn7fspnR+ape+/dH6YJX3+M50fmqXv
+v3R+mCV9/jOdH5ql7790fpglff4znR+ape+/dH6YJX3+M50fmqXvv3R+mCW9
+f5XOD83S9186P8yS3r9K54dm6fsvnR9mST8fp/NDs/T9l84Ps6Tvp3R+aJa+
+/9L5YZaz3yd++gXkuP9hkvU86NtvIMf9D5N8PSenWiDH/Q+TrOdB326BHPc/
+TLLuZ73dB3Lc/zDJup/1dh/Icf/DJOvz8tt9IMf9D5Os99fbfSDH/Q+TnJ0P
+fXocyHH/wyTH8n57HMhx/8MkZ+dDnx4Hctz/MMmxtG+PAznuf5jkbH/r6XEg
+x/0Pk5ztbz09DuS4/2GSs+fnp8eBHPc/THJ2vz09DuS4/2GS9bzo1fOjd+OB
+HPc/TLKeF716fvRuPJDj/odJ1vOiV8+P3o0Hctz/MMl6XvTq+dG78UCO+x8m
+Wfe7ru5/3Y0Hctz/MMm633V1/+tuPJDj/odJ1ufpq8/Xd+OBHPc/TLLef1fv
+x7vxQI77Hya5e37U+VPYl/sfJrl7ftT5U9iX+x8muXt+1PlT2Jf7Hya5e37U
++VPYl/sfJrm7/2X/DPbl/odJ7u5/2T+Dfbn/YZK7z9eez2Ff7n+Y5O796H6G
+fbn/YZKz3zc+ewH7cv/DJOt50qtvYF/uf5hkPU96tQX25f6HSdbzpFdbYF/u
+f5hk3Q+72gf25f6HSdb9sKt9YF/uf5hkfd6+2gf25f6HSdb782of2Jf7HyY5
+O1/q/CnM5f6HSc7Olzp/CnO5/2GSs/Olzp/CXO5/mOTsfKnzpzCX+x8mOdsf
+s38Gc7n/YZKz/TH7ZzCX+x8mOXv+9nwOc7n/YZKz+9X9DHO5/2ESv38Mvdz/
+MMl63tT5U+jh/odJ/P4x9HL/wyR+/xh6uf9hEr9/DL3c/zCJ3z+GXu5/mMTv
+H0Mv9z9M4vePoZf7HyZx/hR6uf9hEudPoZf7HyZx/hR6uf9hEudPoZf7Hyax
+fwa93P8wif0z6OX+h0k8n0Mv9z9M4n6GXu5/mOTs95G9vLzmvoBJzn4f2dvb
+e+4bmOTrOV2r1fa1wCSHVqutbYFJjv956evr9/WBSY4/35/X9fX1e/rAJOvz
+ur6+fk8fmGS9v/X19Xv6wCTH8jJu3HjPODDJsbyNGzfeMw5M8vXc/tPzu3Hj
+xueOA5McS2vcuPGecWCSs/0148aNzx0HJjn+/P78bty48bnjwCRnz+/GjRuf
+Ow5Mcna/GzdufO44MMlx8hIvXvzceGCS4+QtXrz4ufHAJF/P8T+14sWLnxsP
+THKctOLFi58bD0yy7rdd3X8TL178vvHAJMef78/za1+8ePFz44FJ1uf5q8/3
+4sWL3zcemGS9/69+HogXL37feGCSY3mJFy++Jx6Y5Fje4sWL74kHJvl6rv/b
+53vx4sXvGw9MciytePHie+KBSe7uv4kXL37feGCSu/tv4sWL3zcemOTu8714
+8eL3jQcmuft5IF68+H3jgUnW86xXX/LLL/+++YFJjptv+eWXf9/8wCRfz/l/
+28ovv/z75gcmOW628ssv/775gUnW/birffnll3/f/MAkx5/vz/tX+/LLL/++
++YFJ1uf9q3355Zd/3/zAJOvnw9W+/PLLv29+YJJjeV0dl19++ffND0xyLO+r
+4/LLL/+++YFJvp77f3r+PxuXX375980PTHIs7dVx+eWXf9/8wCRn+3NP79/J
+L7/8ufzAJGf7c0/v38kvv/y5/MAkZ8//T38/kF9++XP5gUnOPi+e/jyRX375
+c/mBSdbzrm+ff5Vffvlz+YFJjpO3/PLLPzc/MMnX94CfWvnll39ufmCS46SV
+X3755+YHJln3697ev5Nffvlz+YFJ1v26t/fv5Jdf/lx+YJL1+8Db3w/kl1/+
+XH5gkvXz4+3PE/nllz+XH5gkff5Vfvnlz+UHJjmWt/zyy9+TH5gkff5Vfvnl
+t38OfMKxtPLLL39PfmCS9P6d/PLL7+858Anp/Tv55Zcf4BPS3w/kl19+gE9I
+f57IL7/8AJ+wnod9+5WmfvU31w9Msp6Hffudpn71N9cPTPL1PSHVpqlf/ckW
+4HOOcJum/myb1l4/MMm6n/d2P0396m+uH5jk+PP9+8Lb/TT1q7+5fmCS9fvC
+2/009as/2Qf4nPXz5e1+mvqz/bT2+oFJjuX19nia+tXfXD8wybG83x5PU7/6
+m+sHJvn63vDT94enx9PUr/7/tm+PA3zOsbRvj6ep/3v79nhae/3AJGf7e0+P
+p6lf/c31A5Oc7e89PZ6mfvU31w9Mcvb94enxNPWrPzkO8DlnnzdPj6epPzue
+1l4/MMl6Xvbq+dm78WnqV39z/cAkx8n76fg09au/uX5gkq/vET+1T8enqV/9
+v7VPxwN8znHSPh2fpv7f26fj09rrByZZ9/uu7v/djU9Tv/qb6wcmWff7ru7/
+3Y1PU7/6m+sHJlm/T1z9fnE3Pk396v+t/3Q8wOesnz9XP4/uxqep//f+0/Fp
+7fUDk9w9P7v7+Vv1q7+5fmCSY3m/HZ+mfvU31w9Mcvf87O7nb9Wv/v+2b8cD
+fM6xtG/Hp6n/e/t2fFp7/cAkd/f/dt8/VL/6m+sHJrm7/7f7/qH61d9cPzDJ
+3e8Xu38/Ub/6k/EAn3P382j3zzP1Z+PT2usHJlnP01597U796m+uH5hkPU97
+9b079au/uX5gkq/vGX/b7k796r/TAvw7jpvt7tR/r91de/3AJOt+4NX+7tSv
+/ub6gUnW/cCr/d2pX/3N9QOTrN83rvZ3p3713+kD/DvWz6er/d2p/15/d+31
+A5Ocna+dfv5W/epvrh+Y5FjeV8d3p371N9cPTHJ2vnb6+Vv1q/+/7dVxgH/H
+sbRXx3en/u/t1fHdtdcPTHK2Pzh9/1D96m+uH5jkbH9w+v6h+tXfXD8wydn3
+j+nfT9Sv/jvjAP+Os8+r6Z9n6r83vrv2+oFJ1vO2bedv1a/+5vqBSdbztm3n
+b9Wv/ub6gUnW87Zt52/Vr/7fWoB9rOdt287fqv/3drr2+oFJ1v3Ctv1D9au/
+uX5gknW/sG3/UP3qb64fmGT9PtL2/UT96v+tD7CP9fOr7fNM/b/3p2uvH5ik
+/fyt+tXfXD8wSfv5W/Wrv7l+YJL287fqV/9/W4B9tZ+/Vf/3tk17/cAk7fuH
+6ld/c/3AJO37h+pXf3P9wCTt30/Ur36AGdo/z9Tfrb1+YJKz34ee/mqXnv/0
+C2CO9Txu27tdev7Tb4A5vr6ntLbt0vOfbgHmOMrbdun5T7cAc6z7iW39dun5
+T/cB5jj+fP++0tZvl57/dB9gjvX7Slu/XXr+032AOdbPt7Z+u/T8p/sAcxzL
+q228XXr+0+MAcxzLu228XXr+0+MAc3x9b/np+8v08Xbp+U+PA8xxLG3beLv0
+/KfHAeY421+cPt4uPf/pcYA5zvYXp4+3S89/ehxgjrPvL9PH26XnPz0OMMfZ
+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
+BPbPAWAC++cAMIHv5wAwgb/nUOD/A1LOyXA=
+   "], {{0, 0}, {2001, 1001}}, {0, 1}],
+  Frame->Automatic,
+  FrameLabel->{None, None},
+  FrameTicks->{{None, None}, {None, None}},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, 
+    "DefaultGraphicsInteraction" -> {
+     "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+      "Effects" -> {
+       "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+        "Droplines" -> {
+         "freeformCursorMode" -> True, 
+          "placement" -> {"x" -> "All", "y" -> "None"}}}}, "DefaultPlotStyle" -> 
+    Automatic}]], "Output",
+ CellChangeTimes->{{3.820575950446583*^9, 3.820576002533249*^9}, 
+   3.8205782049522266`*^9},
+ CellLabel->
+  "Out[149]=",ExpressionUUID->"8625ab84-286b-464a-851c-471bdb2eb595"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.820573131109432*^9, 
+  3.82057313111243*^9}},ExpressionUUID->"538240e0-c481-4faa-89c7-\
+8fae7f650b40"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.8205720892111864`*^9, 
+  3.820572119114393*^9}},ExpressionUUID->"680472de-16b3-4ca6-986c-\
+62c2f8f2087b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RulePlot", "[", 
+  RowBox[{"CellularAutomaton", "[", "\"\<GameOfLife\>\"", "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{3.8205754050394173`*^9},
+ CellLabel->
+  "In[100]:=",ExpressionUUID->"d2b38d1e-4def-4158-b5d9-877f9d874ae2"],
+
+Cell[BoxData[
+ GraphicsBox[{{{InsetBox[
+      GraphicsBox[{{
+         {EdgeForm[GrayLevel[0]], 
+          {GrayLevel[0], RectangleBox[{-3, 1}], RectangleBox[{-2, 1}], 
+           RectangleBox[{-1, 1}], RectangleBox[{-3, 0}], 
+           RectangleBox[{-1, 0}], RectangleBox[{-3, -1}], 
+           RectangleBox[{-2, -1}], RectangleBox[{-1, -1}]}, 
+          {GrayLevel[0], RectangleBox[{-2, 0}]}}, 
+         {Opacity[0], EdgeForm[GrayLevel[
+           NCache[-1 + GoldenRatio, 0.6180339887498949]]], {
+           PolygonBox[{{-3, 0}, {-3, -1}, {-2, -1}, {-1, -1}, {0, -1}, {0, 
+            0}, {0, 1}, {0, 2}, {-1, 2}, {-2, 2}, {-3, 2}, {-3, 1}}], 
+           PolygonBox[{{-2, 0}, {-2, 1}, {-1, 1}, {-1, 0}}]}, 
+          PolygonBox[{{-2, 1}, {-2, 0}, {-1, 0}, {-1, 1}}]}}, 
+        {Arrowheads[{{Automatic, Automatic, 
+            GraphicsBox[
+             LineBox[
+              NCache[{{Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[1, 2]}, {0, 0}, {Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[-1, 2]}}, {{-0.8660254037844386, 0.5}, {0, 
+                0}, {-0.8660254037844386, -0.5}}]]]}}], 
+         ArrowBox[
+          NCache[{{0.5, Rational[1, 2]}, {1.5, Rational[1, 2]}}, {{0.5, 
+           0.5}, {1.5, 0.5}}]]}, 
+        {EdgeForm[GrayLevel[
+          NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+         {GrayLevel[1], RectangleBox[{2, 0}]}}},
+       PlotRange->NCache[{{
+           Rational[-7, 2], 
+           Rational[7, 2]}, {
+           Rational[-3, 2], 
+           Rational[5, 2]}}, {{-3.5, 3.5}, {-1.5, 2.5}}]], 
+      NCache[{0.875, Rational[5, 2]}, {0.875, 2.5}], {
+      Center, Center}, {1.75, 1}], InsetBox[
+      GraphicsBox[{{
+         {EdgeForm[GrayLevel[
+           NCache[
+            Rational[1, 8], 0.125]]], 
+          {GrayLevel[
+            NCache[
+             Rational[1, 8], 0.125]], RectangleBox[{-3, 1}], 
+           RectangleBox[{-2, 1}], RectangleBox[{-1, 1}], 
+           RectangleBox[{-3, 0}], RectangleBox[{-1, 0}], 
+           RectangleBox[{-3, -1}], RectangleBox[{-2, -1}], 
+           RectangleBox[{-1, -1}]}, 
+          {GrayLevel[1], RectangleBox[{-2, 0}]}}, 
+         {Opacity[0], EdgeForm[GrayLevel[
+           NCache[-1 + GoldenRatio, 0.6180339887498949]]], {
+           PolygonBox[{{-3, 0}, {-3, -1}, {-2, -1}, {-1, -1}, {0, -1}, {0, 
+            0}, {0, 1}, {0, 2}, {-1, 2}, {-2, 2}, {-3, 2}, {-3, 1}}], 
+           PolygonBox[{{-2, 0}, {-2, 1}, {-1, 1}, {-1, 0}}]}, 
+          PolygonBox[{{-2, 1}, {-2, 0}, {-1, 0}, {-1, 1}}]}}, 
+        {Arrowheads[{{Automatic, Automatic, 
+            GraphicsBox[
+             LineBox[
+              NCache[{{Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[1, 2]}, {0, 0}, {Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[-1, 2]}}, {{-0.8660254037844386, 0.5}, {0, 
+                0}, {-0.8660254037844386, -0.5}}]]]}}], 
+         ArrowBox[
+          NCache[{{0.5, Rational[1, 2]}, {1.5, Rational[1, 2]}}, {{0.5, 
+           0.5}, {1.5, 0.5}}]]}, 
+        {EdgeForm[GrayLevel[
+          NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+         {GrayLevel[1], RectangleBox[{2, 0}]}}},
+       PlotRange->NCache[{{
+           Rational[-7, 2], 
+           Rational[7, 2]}, {
+           Rational[-3, 2], 
+           Rational[5, 2]}}, {{-3.5, 3.5}, {-1.5, 2.5}}]], 
+      NCache[{2.625, Rational[5, 2]}, {2.625, 2.5}], {
+      Center, Center}, {1.75, 1}], InsetBox[
+      GraphicsBox[{{
+         {EdgeForm[GrayLevel[
+           NCache[
+            Rational[3, 8], 0.375]]], 
+          {GrayLevel[
+            NCache[
+             Rational[3, 8], 0.375]], RectangleBox[{-3, 1}], 
+           RectangleBox[{-2, 1}], RectangleBox[{-1, 1}], 
+           RectangleBox[{-3, 0}], RectangleBox[{-1, 0}], 
+           RectangleBox[{-3, -1}], RectangleBox[{-2, -1}], 
+           RectangleBox[{-1, -1}]}, 
+          {GrayLevel[0], RectangleBox[{-2, 0}]}}, 
+         {Opacity[0], EdgeForm[GrayLevel[
+           NCache[-1 + GoldenRatio, 0.6180339887498949]]], {
+           PolygonBox[{{-3, 0}, {-3, -1}, {-2, -1}, {-1, -1}, {0, -1}, {0, 
+            0}, {0, 1}, {0, 2}, {-1, 2}, {-2, 2}, {-3, 2}, {-3, 1}}], 
+           PolygonBox[{{-2, 0}, {-2, 1}, {-1, 1}, {-1, 0}}]}, 
+          PolygonBox[{{-2, 1}, {-2, 0}, {-1, 0}, {-1, 1}}]}}, 
+        {Arrowheads[{{Automatic, Automatic, 
+            GraphicsBox[
+             LineBox[
+              NCache[{{Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[1, 2]}, {0, 0}, {Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[-1, 2]}}, {{-0.8660254037844386, 0.5}, {0, 
+                0}, {-0.8660254037844386, -0.5}}]]]}}], 
+         ArrowBox[
+          NCache[{{0.5, Rational[1, 2]}, {1.5, Rational[1, 2]}}, {{0.5, 
+           0.5}, {1.5, 0.5}}]]}, 
+        {EdgeForm[GrayLevel[
+          NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+         {GrayLevel[1], RectangleBox[{2, 0}]}}},
+       PlotRange->NCache[{{
+           Rational[-7, 2], 
+           Rational[7, 2]}, {
+           Rational[-3, 2], 
+           Rational[5, 2]}}, {{-3.5, 3.5}, {-1.5, 2.5}}]], 
+      NCache[{4.375, Rational[5, 2]}, {4.375, 2.5}], {
+      Center, Center}, {1.75, 1}], InsetBox[
+      GraphicsBox[{{
+         {EdgeForm[GrayLevel[
+           NCache[
+            Rational[1, 2], 0.5]]], 
+          {GrayLevel[
+            NCache[
+             Rational[1, 2], 0.5]], RectangleBox[{-3, 1}], 
+           RectangleBox[{-2, 1}], RectangleBox[{-1, 1}], 
+           RectangleBox[{-3, 0}], RectangleBox[{-1, 0}], 
+           RectangleBox[{-3, -1}], RectangleBox[{-2, -1}], 
+           RectangleBox[{-1, -1}]}, 
+          {GrayLevel[1], RectangleBox[{-2, 0}]}}, 
+         {Opacity[0], EdgeForm[GrayLevel[
+           NCache[-1 + GoldenRatio, 0.6180339887498949]]], {
+           PolygonBox[{{-3, 0}, {-3, -1}, {-2, -1}, {-1, -1}, {0, -1}, {0, 
+            0}, {0, 1}, {0, 2}, {-1, 2}, {-2, 2}, {-3, 2}, {-3, 1}}], 
+           PolygonBox[{{-2, 0}, {-2, 1}, {-1, 1}, {-1, 0}}]}, 
+          PolygonBox[{{-2, 1}, {-2, 0}, {-1, 0}, {-1, 1}}]}}, 
+        {Arrowheads[{{Automatic, Automatic, 
+            GraphicsBox[
+             LineBox[
+              NCache[{{Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[1, 2]}, {0, 0}, {Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[-1, 2]}}, {{-0.8660254037844386, 0.5}, {0, 
+                0}, {-0.8660254037844386, -0.5}}]]]}}], 
+         ArrowBox[
+          NCache[{{0.5, Rational[1, 2]}, {1.5, Rational[1, 2]}}, {{0.5, 
+           0.5}, {1.5, 0.5}}]]}, 
+        {EdgeForm[GrayLevel[
+          NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+         {GrayLevel[1], RectangleBox[{2, 0}]}}},
+       PlotRange->NCache[{{
+           Rational[-7, 2], 
+           Rational[7, 2]}, {
+           Rational[-3, 2], 
+           Rational[5, 2]}}, {{-3.5, 3.5}, {-1.5, 2.5}}]], 
+      NCache[{6.125, Rational[5, 2]}, {6.125, 2.5}], {
+      Center, Center}, {1.75, 1}], InsetBox[
+      GraphicsBox[{{
+         {EdgeForm[GrayLevel[
+           NCache[
+            Rational[3, 4], 0.75]]], 
+          {GrayLevel[
+            NCache[
+             Rational[3, 4], 0.75]], RectangleBox[{-3, 1}], 
+           RectangleBox[{-2, 1}], RectangleBox[{-1, 1}], 
+           RectangleBox[{-3, 0}], RectangleBox[{-1, 0}], 
+           RectangleBox[{-3, -1}], RectangleBox[{-2, -1}], 
+           RectangleBox[{-1, -1}]}, 
+          {GrayLevel[0], RectangleBox[{-2, 0}]}}, 
+         {Opacity[0], EdgeForm[GrayLevel[
+           NCache[-1 + GoldenRatio, 0.6180339887498949]]], {
+           PolygonBox[{{-3, 0}, {-3, -1}, {-2, -1}, {-1, -1}, {0, -1}, {0, 
+            0}, {0, 1}, {0, 2}, {-1, 2}, {-2, 2}, {-3, 2}, {-3, 1}}], 
+           PolygonBox[{{-2, 0}, {-2, 1}, {-1, 1}, {-1, 0}}]}, 
+          PolygonBox[{{-2, 1}, {-2, 0}, {-1, 0}, {-1, 1}}]}}, 
+        {Arrowheads[{{Automatic, Automatic, 
+            GraphicsBox[
+             LineBox[
+              NCache[{{Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[1, 2]}, {0, 0}, {Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[-1, 2]}}, {{-0.8660254037844386, 0.5}, {0, 
+                0}, {-0.8660254037844386, -0.5}}]]]}}], 
+         ArrowBox[
+          NCache[{{0.5, Rational[1, 2]}, {1.5, Rational[1, 2]}}, {{0.5, 
+           0.5}, {1.5, 0.5}}]]}, 
+        {EdgeForm[GrayLevel[
+          NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+         {GrayLevel[0], RectangleBox[{2, 0}]}}},
+       PlotRange->NCache[{{
+           Rational[-7, 2], 
+           Rational[7, 2]}, {
+           Rational[-3, 2], 
+           Rational[5, 2]}}, {{-3.5, 3.5}, {-1.5, 2.5}}]], 
+      NCache[{7.875, Rational[5, 2]}, {7.875, 2.5}], {
+      Center, Center}, {1.75, 1}], InsetBox[
+      GraphicsBox[{{
+         {EdgeForm[GrayLevel[
+           NCache[
+            Rational[7, 8], 0.875]]], 
+          {GrayLevel[
+            NCache[
+             Rational[7, 8], 0.875]], RectangleBox[{-3, 1}], 
+           RectangleBox[{-2, 1}], RectangleBox[{-1, 1}], 
+           RectangleBox[{-3, 0}], RectangleBox[{-1, 0}], 
+           RectangleBox[{-3, -1}], RectangleBox[{-2, -1}], 
+           RectangleBox[{-1, -1}]}, 
+          {GrayLevel[1], RectangleBox[{-2, 0}]}}, 
+         {Opacity[0], EdgeForm[GrayLevel[
+           NCache[-1 + GoldenRatio, 0.6180339887498949]]], {
+           PolygonBox[{{-3, 0}, {-3, -1}, {-2, -1}, {-1, -1}, {0, -1}, {0, 
+            0}, {0, 1}, {0, 2}, {-1, 2}, {-2, 2}, {-3, 2}, {-3, 1}}], 
+           PolygonBox[{{-2, 0}, {-2, 1}, {-1, 1}, {-1, 0}}]}, 
+          PolygonBox[{{-2, 1}, {-2, 0}, {-1, 0}, {-1, 1}}]}}, 
+        {Arrowheads[{{Automatic, Automatic, 
+            GraphicsBox[
+             LineBox[
+              NCache[{{Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[1, 2]}, {0, 0}, {Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[-1, 2]}}, {{-0.8660254037844386, 0.5}, {0, 
+                0}, {-0.8660254037844386, -0.5}}]]]}}], 
+         ArrowBox[
+          NCache[{{0.5, Rational[1, 2]}, {1.5, Rational[1, 2]}}, {{0.5, 
+           0.5}, {1.5, 0.5}}]]}, 
+        {EdgeForm[GrayLevel[
+          NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+         {GrayLevel[1], RectangleBox[{2, 0}]}}},
+       PlotRange->NCache[{{
+           Rational[-7, 2], 
+           Rational[7, 2]}, {
+           Rational[-3, 2], 
+           Rational[5, 2]}}, {{-3.5, 3.5}, {-1.5, 2.5}}]], 
+      NCache[{9.625, Rational[5, 2]}, {9.625, 2.5}], {
+      Center, Center}, {1.75, 1}]}, {InsetBox[
+      GraphicsBox[{{
+         {EdgeForm[GrayLevel[0]], 
+          {GrayLevel[0], RectangleBox[{-3, 1}], RectangleBox[{-2, 1}], 
+           RectangleBox[{-1, 1}], RectangleBox[{-3, 0}], 
+           RectangleBox[{-1, 0}], RectangleBox[{-3, -1}], 
+           RectangleBox[{-2, -1}], RectangleBox[{-1, -1}]}, 
+          {GrayLevel[1], RectangleBox[{-2, 0}]}}, 
+         {Opacity[0], EdgeForm[GrayLevel[
+           NCache[-1 + GoldenRatio, 0.6180339887498949]]], {
+           PolygonBox[{{-3, 0}, {-3, -1}, {-2, -1}, {-1, -1}, {0, -1}, {0, 
+            0}, {0, 1}, {0, 2}, {-1, 2}, {-2, 2}, {-3, 2}, {-3, 1}}], 
+           PolygonBox[{{-2, 0}, {-2, 1}, {-1, 1}, {-1, 0}}]}, 
+          PolygonBox[{{-2, 1}, {-2, 0}, {-1, 0}, {-1, 1}}]}}, 
+        {Arrowheads[{{Automatic, Automatic, 
+            GraphicsBox[
+             LineBox[
+              NCache[{{Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[1, 2]}, {0, 0}, {Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[-1, 2]}}, {{-0.8660254037844386, 0.5}, {0, 
+                0}, {-0.8660254037844386, -0.5}}]]]}}], 
+         ArrowBox[
+          NCache[{{0.5, Rational[1, 2]}, {1.5, Rational[1, 2]}}, {{0.5, 
+           0.5}, {1.5, 0.5}}]]}, 
+        {EdgeForm[GrayLevel[
+          NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+         {GrayLevel[1], RectangleBox[{2, 0}]}}},
+       PlotRange->NCache[{{
+           Rational[-7, 2], 
+           Rational[7, 2]}, {
+           Rational[-3, 2], 
+           Rational[5, 2]}}, {{-3.5, 3.5}, {-1.5, 2.5}}]], 
+      NCache[{0.875, Rational[3, 2]}, {0.875, 1.5}], {
+      Center, Center}, {1.75, 1}], InsetBox[
+      GraphicsBox[{{
+         {EdgeForm[GrayLevel[
+           NCache[
+            Rational[1, 4], 0.25]]], 
+          {GrayLevel[
+            NCache[
+             Rational[1, 4], 0.25]], RectangleBox[{-3, 1}], 
+           RectangleBox[{-2, 1}], RectangleBox[{-1, 1}], 
+           RectangleBox[{-3, 0}], RectangleBox[{-1, 0}], 
+           RectangleBox[{-3, -1}], RectangleBox[{-2, -1}], 
+           RectangleBox[{-1, -1}]}, 
+          {GrayLevel[0], RectangleBox[{-2, 0}]}}, 
+         {Opacity[0], EdgeForm[GrayLevel[
+           NCache[-1 + GoldenRatio, 0.6180339887498949]]], {
+           PolygonBox[{{-3, 0}, {-3, -1}, {-2, -1}, {-1, -1}, {0, -1}, {0, 
+            0}, {0, 1}, {0, 2}, {-1, 2}, {-2, 2}, {-3, 2}, {-3, 1}}], 
+           PolygonBox[{{-2, 0}, {-2, 1}, {-1, 1}, {-1, 0}}]}, 
+          PolygonBox[{{-2, 1}, {-2, 0}, {-1, 0}, {-1, 1}}]}}, 
+        {Arrowheads[{{Automatic, Automatic, 
+            GraphicsBox[
+             LineBox[
+              NCache[{{Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[1, 2]}, {0, 0}, {Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[-1, 2]}}, {{-0.8660254037844386, 0.5}, {0, 
+                0}, {-0.8660254037844386, -0.5}}]]]}}], 
+         ArrowBox[
+          NCache[{{0.5, Rational[1, 2]}, {1.5, Rational[1, 2]}}, {{0.5, 
+           0.5}, {1.5, 0.5}}]]}, 
+        {EdgeForm[GrayLevel[
+          NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+         {GrayLevel[1], RectangleBox[{2, 0}]}}},
+       PlotRange->NCache[{{
+           Rational[-7, 2], 
+           Rational[7, 2]}, {
+           Rational[-3, 2], 
+           Rational[5, 2]}}, {{-3.5, 3.5}, {-1.5, 2.5}}]], 
+      NCache[{2.625, Rational[3, 2]}, {2.625, 1.5}], {
+      Center, Center}, {1.75, 1}], InsetBox[
+      GraphicsBox[{{
+         {EdgeForm[GrayLevel[
+           NCache[
+            Rational[3, 8], 0.375]]], 
+          {GrayLevel[
+            NCache[
+             Rational[3, 8], 0.375]], RectangleBox[{-3, 1}], 
+           RectangleBox[{-2, 1}], RectangleBox[{-1, 1}], 
+           RectangleBox[{-3, 0}], RectangleBox[{-1, 0}], 
+           RectangleBox[{-3, -1}], RectangleBox[{-2, -1}], 
+           RectangleBox[{-1, -1}]}, 
+          {GrayLevel[1], RectangleBox[{-2, 0}]}}, 
+         {Opacity[0], EdgeForm[GrayLevel[
+           NCache[-1 + GoldenRatio, 0.6180339887498949]]], {
+           PolygonBox[{{-3, 0}, {-3, -1}, {-2, -1}, {-1, -1}, {0, -1}, {0, 
+            0}, {0, 1}, {0, 2}, {-1, 2}, {-2, 2}, {-3, 2}, {-3, 1}}], 
+           PolygonBox[{{-2, 0}, {-2, 1}, {-1, 1}, {-1, 0}}]}, 
+          PolygonBox[{{-2, 1}, {-2, 0}, {-1, 0}, {-1, 1}}]}}, 
+        {Arrowheads[{{Automatic, Automatic, 
+            GraphicsBox[
+             LineBox[
+              NCache[{{Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[1, 2]}, {0, 0}, {Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[-1, 2]}}, {{-0.8660254037844386, 0.5}, {0, 
+                0}, {-0.8660254037844386, -0.5}}]]]}}], 
+         ArrowBox[
+          NCache[{{0.5, Rational[1, 2]}, {1.5, Rational[1, 2]}}, {{0.5, 
+           0.5}, {1.5, 0.5}}]]}, 
+        {EdgeForm[GrayLevel[
+          NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+         {GrayLevel[1], RectangleBox[{2, 0}]}}},
+       PlotRange->NCache[{{
+           Rational[-7, 2], 
+           Rational[7, 2]}, {
+           Rational[-3, 2], 
+           Rational[5, 2]}}, {{-3.5, 3.5}, {-1.5, 2.5}}]], 
+      NCache[{4.375, Rational[3, 2]}, {4.375, 1.5}], {
+      Center, Center}, {1.75, 1}], InsetBox[
+      GraphicsBox[{{
+         {EdgeForm[GrayLevel[
+           NCache[
+            Rational[5, 8], 0.625]]], 
+          {GrayLevel[
+            NCache[
+             Rational[5, 8], 0.625]], RectangleBox[{-3, 1}], 
+           RectangleBox[{-2, 1}], RectangleBox[{-1, 1}], 
+           RectangleBox[{-3, 0}], RectangleBox[{-1, 0}], 
+           RectangleBox[{-3, -1}], RectangleBox[{-2, -1}], 
+           RectangleBox[{-1, -1}]}, 
+          {GrayLevel[0], RectangleBox[{-2, 0}]}}, 
+         {Opacity[0], EdgeForm[GrayLevel[
+           NCache[-1 + GoldenRatio, 0.6180339887498949]]], {
+           PolygonBox[{{-3, 0}, {-3, -1}, {-2, -1}, {-1, -1}, {0, -1}, {0, 
+            0}, {0, 1}, {0, 2}, {-1, 2}, {-2, 2}, {-3, 2}, {-3, 1}}], 
+           PolygonBox[{{-2, 0}, {-2, 1}, {-1, 1}, {-1, 0}}]}, 
+          PolygonBox[{{-2, 1}, {-2, 0}, {-1, 0}, {-1, 1}}]}}, 
+        {Arrowheads[{{Automatic, Automatic, 
+            GraphicsBox[
+             LineBox[
+              NCache[{{Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[1, 2]}, {0, 0}, {Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[-1, 2]}}, {{-0.8660254037844386, 0.5}, {0, 
+                0}, {-0.8660254037844386, -0.5}}]]]}}], 
+         ArrowBox[
+          NCache[{{0.5, Rational[1, 2]}, {1.5, Rational[1, 2]}}, {{0.5, 
+           0.5}, {1.5, 0.5}}]]}, 
+        {EdgeForm[GrayLevel[
+          NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+         {GrayLevel[0], RectangleBox[{2, 0}]}}},
+       PlotRange->NCache[{{
+           Rational[-7, 2], 
+           Rational[7, 2]}, {
+           Rational[-3, 2], 
+           Rational[5, 2]}}, {{-3.5, 3.5}, {-1.5, 2.5}}]], 
+      NCache[{6.125, Rational[3, 2]}, {6.125, 1.5}], {
+      Center, Center}, {1.75, 1}], InsetBox[
+      GraphicsBox[{{
+         {EdgeForm[GrayLevel[
+           NCache[
+            Rational[3, 4], 0.75]]], 
+          {GrayLevel[
+            NCache[
+             Rational[3, 4], 0.75]], RectangleBox[{-3, 1}], 
+           RectangleBox[{-2, 1}], RectangleBox[{-1, 1}], 
+           RectangleBox[{-3, 0}], RectangleBox[{-1, 0}], 
+           RectangleBox[{-3, -1}], RectangleBox[{-2, -1}], 
+           RectangleBox[{-1, -1}]}, 
+          {GrayLevel[1], RectangleBox[{-2, 0}]}}, 
+         {Opacity[0], EdgeForm[GrayLevel[
+           NCache[-1 + GoldenRatio, 0.6180339887498949]]], {
+           PolygonBox[{{-3, 0}, {-3, -1}, {-2, -1}, {-1, -1}, {0, -1}, {0, 
+            0}, {0, 1}, {0, 2}, {-1, 2}, {-2, 2}, {-3, 2}, {-3, 1}}], 
+           PolygonBox[{{-2, 0}, {-2, 1}, {-1, 1}, {-1, 0}}]}, 
+          PolygonBox[{{-2, 1}, {-2, 0}, {-1, 0}, {-1, 1}}]}}, 
+        {Arrowheads[{{Automatic, Automatic, 
+            GraphicsBox[
+             LineBox[
+              NCache[{{Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[1, 2]}, {0, 0}, {Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[-1, 2]}}, {{-0.8660254037844386, 0.5}, {0, 
+                0}, {-0.8660254037844386, -0.5}}]]]}}], 
+         ArrowBox[
+          NCache[{{0.5, Rational[1, 2]}, {1.5, Rational[1, 2]}}, {{0.5, 
+           0.5}, {1.5, 0.5}}]]}, 
+        {EdgeForm[GrayLevel[
+          NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+         {GrayLevel[1], RectangleBox[{2, 0}]}}},
+       PlotRange->NCache[{{
+           Rational[-7, 2], 
+           Rational[7, 2]}, {
+           Rational[-3, 2], 
+           Rational[5, 2]}}, {{-3.5, 3.5}, {-1.5, 2.5}}]], 
+      NCache[{7.875, Rational[3, 2]}, {7.875, 1.5}], {
+      Center, Center}, {1.75, 1}], InsetBox[
+      GraphicsBox[{{
+         {EdgeForm[GrayLevel[1]], 
+          {GrayLevel[1], RectangleBox[{-3, 1}], RectangleBox[{-2, 1}], 
+           RectangleBox[{-1, 1}], RectangleBox[{-3, 0}], 
+           RectangleBox[{-1, 0}], RectangleBox[{-3, -1}], 
+           RectangleBox[{-2, -1}], RectangleBox[{-1, -1}]}, 
+          {GrayLevel[0], RectangleBox[{-2, 0}]}}, 
+         {Opacity[0], EdgeForm[GrayLevel[
+           NCache[-1 + GoldenRatio, 0.6180339887498949]]], {
+           PolygonBox[{{-3, 0}, {-3, -1}, {-2, -1}, {-1, -1}, {0, -1}, {0, 
+            0}, {0, 1}, {0, 2}, {-1, 2}, {-2, 2}, {-3, 2}, {-3, 1}}], 
+           PolygonBox[{{-2, 0}, {-2, 1}, {-1, 1}, {-1, 0}}]}, 
+          PolygonBox[{{-2, 1}, {-2, 0}, {-1, 0}, {-1, 1}}]}}, 
+        {Arrowheads[{{Automatic, Automatic, 
+            GraphicsBox[
+             LineBox[
+              NCache[{{Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[1, 2]}, {0, 0}, {Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[-1, 2]}}, {{-0.8660254037844386, 0.5}, {0, 
+                0}, {-0.8660254037844386, -0.5}}]]]}}], 
+         ArrowBox[
+          NCache[{{0.5, Rational[1, 2]}, {1.5, Rational[1, 2]}}, {{0.5, 
+           0.5}, {1.5, 0.5}}]]}, 
+        {EdgeForm[GrayLevel[
+          NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+         {GrayLevel[1], RectangleBox[{2, 0}]}}},
+       PlotRange->NCache[{{
+           Rational[-7, 2], 
+           Rational[7, 2]}, {
+           Rational[-3, 2], 
+           Rational[5, 2]}}, {{-3.5, 3.5}, {-1.5, 2.5}}]], 
+      NCache[{9.625, Rational[3, 2]}, {9.625, 1.5}], {
+      Center, Center}, {1.75, 1}]}, {InsetBox[
+      GraphicsBox[{{
+         {EdgeForm[GrayLevel[
+           NCache[
+            Rational[1, 8], 0.125]]], 
+          {GrayLevel[
+            NCache[
+             Rational[1, 8], 0.125]], RectangleBox[{-3, 1}], 
+           RectangleBox[{-2, 1}], RectangleBox[{-1, 1}], 
+           RectangleBox[{-3, 0}], RectangleBox[{-1, 0}], 
+           RectangleBox[{-3, -1}], RectangleBox[{-2, -1}], 
+           RectangleBox[{-1, -1}]}, 
+          {GrayLevel[0], RectangleBox[{-2, 0}]}}, 
+         {Opacity[0], EdgeForm[GrayLevel[
+           NCache[-1 + GoldenRatio, 0.6180339887498949]]], {
+           PolygonBox[{{-3, 0}, {-3, -1}, {-2, -1}, {-1, -1}, {0, -1}, {0, 
+            0}, {0, 1}, {0, 2}, {-1, 2}, {-2, 2}, {-3, 2}, {-3, 1}}], 
+           PolygonBox[{{-2, 0}, {-2, 1}, {-1, 1}, {-1, 0}}]}, 
+          PolygonBox[{{-2, 1}, {-2, 0}, {-1, 0}, {-1, 1}}]}}, 
+        {Arrowheads[{{Automatic, Automatic, 
+            GraphicsBox[
+             LineBox[
+              NCache[{{Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[1, 2]}, {0, 0}, {Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[-1, 2]}}, {{-0.8660254037844386, 0.5}, {0, 
+                0}, {-0.8660254037844386, -0.5}}]]]}}], 
+         ArrowBox[
+          NCache[{{0.5, Rational[1, 2]}, {1.5, Rational[1, 2]}}, {{0.5, 
+           0.5}, {1.5, 0.5}}]]}, 
+        {EdgeForm[GrayLevel[
+          NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+         {GrayLevel[1], RectangleBox[{2, 0}]}}},
+       PlotRange->NCache[{{
+           Rational[-7, 2], 
+           Rational[7, 2]}, {
+           Rational[-3, 2], 
+           Rational[5, 2]}}, {{-3.5, 3.5}, {-1.5, 2.5}}]], 
+      NCache[{0.875, Rational[1, 2]}, {0.875, 0.5}], {
+      Center, Center}, {1.75, 1}], InsetBox[
+      GraphicsBox[{{
+         {EdgeForm[GrayLevel[
+           NCache[
+            Rational[1, 4], 0.25]]], 
+          {GrayLevel[
+            NCache[
+             Rational[1, 4], 0.25]], RectangleBox[{-3, 1}], 
+           RectangleBox[{-2, 1}], RectangleBox[{-1, 1}], 
+           RectangleBox[{-3, 0}], RectangleBox[{-1, 0}], 
+           RectangleBox[{-3, -1}], RectangleBox[{-2, -1}], 
+           RectangleBox[{-1, -1}]}, 
+          {GrayLevel[1], RectangleBox[{-2, 0}]}}, 
+         {Opacity[0], EdgeForm[GrayLevel[
+           NCache[-1 + GoldenRatio, 0.6180339887498949]]], {
+           PolygonBox[{{-3, 0}, {-3, -1}, {-2, -1}, {-1, -1}, {0, -1}, {0, 
+            0}, {0, 1}, {0, 2}, {-1, 2}, {-2, 2}, {-3, 2}, {-3, 1}}], 
+           PolygonBox[{{-2, 0}, {-2, 1}, {-1, 1}, {-1, 0}}]}, 
+          PolygonBox[{{-2, 1}, {-2, 0}, {-1, 0}, {-1, 1}}]}}, 
+        {Arrowheads[{{Automatic, Automatic, 
+            GraphicsBox[
+             LineBox[
+              NCache[{{Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[1, 2]}, {0, 0}, {Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[-1, 2]}}, {{-0.8660254037844386, 0.5}, {0, 
+                0}, {-0.8660254037844386, -0.5}}]]]}}], 
+         ArrowBox[
+          NCache[{{0.5, Rational[1, 2]}, {1.5, Rational[1, 2]}}, {{0.5, 
+           0.5}, {1.5, 0.5}}]]}, 
+        {EdgeForm[GrayLevel[
+          NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+         {GrayLevel[1], RectangleBox[{2, 0}]}}},
+       PlotRange->NCache[{{
+           Rational[-7, 2], 
+           Rational[7, 2]}, {
+           Rational[-3, 2], 
+           Rational[5, 2]}}, {{-3.5, 3.5}, {-1.5, 2.5}}]], 
+      NCache[{2.625, Rational[1, 2]}, {2.625, 0.5}], {
+      Center, Center}, {1.75, 1}], InsetBox[
+      GraphicsBox[{{
+         {EdgeForm[GrayLevel[
+           NCache[
+            Rational[1, 2], 0.5]]], 
+          {GrayLevel[
+            NCache[
+             Rational[1, 2], 0.5]], RectangleBox[{-3, 1}], 
+           RectangleBox[{-2, 1}], RectangleBox[{-1, 1}], 
+           RectangleBox[{-3, 0}], RectangleBox[{-1, 0}], 
+           RectangleBox[{-3, -1}], RectangleBox[{-2, -1}], 
+           RectangleBox[{-1, -1}]}, 
+          {GrayLevel[0], RectangleBox[{-2, 0}]}}, 
+         {Opacity[0], EdgeForm[GrayLevel[
+           NCache[-1 + GoldenRatio, 0.6180339887498949]]], {
+           PolygonBox[{{-3, 0}, {-3, -1}, {-2, -1}, {-1, -1}, {0, -1}, {0, 
+            0}, {0, 1}, {0, 2}, {-1, 2}, {-2, 2}, {-3, 2}, {-3, 1}}], 
+           PolygonBox[{{-2, 0}, {-2, 1}, {-1, 1}, {-1, 0}}]}, 
+          PolygonBox[{{-2, 1}, {-2, 0}, {-1, 0}, {-1, 1}}]}}, 
+        {Arrowheads[{{Automatic, Automatic, 
+            GraphicsBox[
+             LineBox[
+              NCache[{{Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[1, 2]}, {0, 0}, {Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[-1, 2]}}, {{-0.8660254037844386, 0.5}, {0, 
+                0}, {-0.8660254037844386, -0.5}}]]]}}], 
+         ArrowBox[
+          NCache[{{0.5, Rational[1, 2]}, {1.5, Rational[1, 2]}}, {{0.5, 
+           0.5}, {1.5, 0.5}}]]}, 
+        {EdgeForm[GrayLevel[
+          NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+         {GrayLevel[1], RectangleBox[{2, 0}]}}},
+       PlotRange->NCache[{{
+           Rational[-7, 2], 
+           Rational[7, 2]}, {
+           Rational[-3, 2], 
+           Rational[5, 2]}}, {{-3.5, 3.5}, {-1.5, 2.5}}]], 
+      NCache[{4.375, Rational[1, 2]}, {4.375, 0.5}], {
+      Center, Center}, {1.75, 1}], InsetBox[
+      GraphicsBox[{{
+         {EdgeForm[GrayLevel[
+           NCache[
+            Rational[5, 8], 0.625]]], 
+          {GrayLevel[
+            NCache[
+             Rational[5, 8], 0.625]], RectangleBox[{-3, 1}], 
+           RectangleBox[{-2, 1}], RectangleBox[{-1, 1}], 
+           RectangleBox[{-3, 0}], RectangleBox[{-1, 0}], 
+           RectangleBox[{-3, -1}], RectangleBox[{-2, -1}], 
+           RectangleBox[{-1, -1}]}, 
+          {GrayLevel[1], RectangleBox[{-2, 0}]}}, 
+         {Opacity[0], EdgeForm[GrayLevel[
+           NCache[-1 + GoldenRatio, 0.6180339887498949]]], {
+           PolygonBox[{{-3, 0}, {-3, -1}, {-2, -1}, {-1, -1}, {0, -1}, {0, 
+            0}, {0, 1}, {0, 2}, {-1, 2}, {-2, 2}, {-3, 2}, {-3, 1}}], 
+           PolygonBox[{{-2, 0}, {-2, 1}, {-1, 1}, {-1, 0}}]}, 
+          PolygonBox[{{-2, 1}, {-2, 0}, {-1, 0}, {-1, 1}}]}}, 
+        {Arrowheads[{{Automatic, Automatic, 
+            GraphicsBox[
+             LineBox[
+              NCache[{{Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[1, 2]}, {0, 0}, {Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[-1, 2]}}, {{-0.8660254037844386, 0.5}, {0, 
+                0}, {-0.8660254037844386, -0.5}}]]]}}], 
+         ArrowBox[
+          NCache[{{0.5, Rational[1, 2]}, {1.5, Rational[1, 2]}}, {{0.5, 
+           0.5}, {1.5, 0.5}}]]}, 
+        {EdgeForm[GrayLevel[
+          NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+         {GrayLevel[0], RectangleBox[{2, 0}]}}},
+       PlotRange->NCache[{{
+           Rational[-7, 2], 
+           Rational[7, 2]}, {
+           Rational[-3, 2], 
+           Rational[5, 2]}}, {{-3.5, 3.5}, {-1.5, 2.5}}]], 
+      NCache[{6.125, Rational[1, 2]}, {6.125, 0.5}], {
+      Center, Center}, {1.75, 1}], InsetBox[
+      GraphicsBox[{{
+         {EdgeForm[GrayLevel[
+           NCache[
+            Rational[7, 8], 0.875]]], 
+          {GrayLevel[
+            NCache[
+             Rational[7, 8], 0.875]], RectangleBox[{-3, 1}], 
+           RectangleBox[{-2, 1}], RectangleBox[{-1, 1}], 
+           RectangleBox[{-3, 0}], RectangleBox[{-1, 0}], 
+           RectangleBox[{-3, -1}], RectangleBox[{-2, -1}], 
+           RectangleBox[{-1, -1}]}, 
+          {GrayLevel[0], RectangleBox[{-2, 0}]}}, 
+         {Opacity[0], EdgeForm[GrayLevel[
+           NCache[-1 + GoldenRatio, 0.6180339887498949]]], {
+           PolygonBox[{{-3, 0}, {-3, -1}, {-2, -1}, {-1, -1}, {0, -1}, {0, 
+            0}, {0, 1}, {0, 2}, {-1, 2}, {-2, 2}, {-3, 2}, {-3, 1}}], 
+           PolygonBox[{{-2, 0}, {-2, 1}, {-1, 1}, {-1, 0}}]}, 
+          PolygonBox[{{-2, 1}, {-2, 0}, {-1, 0}, {-1, 1}}]}}, 
+        {Arrowheads[{{Automatic, Automatic, 
+            GraphicsBox[
+             LineBox[
+              NCache[{{Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[1, 2]}, {0, 0}, {Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[-1, 2]}}, {{-0.8660254037844386, 0.5}, {0, 
+                0}, {-0.8660254037844386, -0.5}}]]]}}], 
+         ArrowBox[
+          NCache[{{0.5, Rational[1, 2]}, {1.5, Rational[1, 2]}}, {{0.5, 
+           0.5}, {1.5, 0.5}}]]}, 
+        {EdgeForm[GrayLevel[
+          NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+         {GrayLevel[1], RectangleBox[{2, 0}]}}},
+       PlotRange->NCache[{{
+           Rational[-7, 2], 
+           Rational[7, 2]}, {
+           Rational[-3, 2], 
+           Rational[5, 2]}}, {{-3.5, 3.5}, {-1.5, 2.5}}]], 
+      NCache[{7.875, Rational[1, 2]}, {7.875, 0.5}], {
+      Center, Center}, {1.75, 1}], InsetBox[
+      GraphicsBox[{{
+         {EdgeForm[GrayLevel[1]], 
+          {GrayLevel[1], RectangleBox[{-3, 1}], RectangleBox[{-2, 1}], 
+           RectangleBox[{-1, 1}], RectangleBox[{-3, 0}], 
+           RectangleBox[{-1, 0}], RectangleBox[{-3, -1}], 
+           RectangleBox[{-2, -1}], RectangleBox[{-1, -1}]}, 
+          {GrayLevel[1], RectangleBox[{-2, 0}]}}, 
+         {Opacity[0], EdgeForm[GrayLevel[
+           NCache[-1 + GoldenRatio, 0.6180339887498949]]], {
+           PolygonBox[{{-3, 0}, {-3, -1}, {-2, -1}, {-1, -1}, {0, -1}, {0, 
+            0}, {0, 1}, {0, 2}, {-1, 2}, {-2, 2}, {-3, 2}, {-3, 1}}], 
+           PolygonBox[{{-2, 0}, {-2, 1}, {-1, 1}, {-1, 0}}]}, 
+          PolygonBox[{{-2, 1}, {-2, 0}, {-1, 0}, {-1, 1}}]}}, 
+        {Arrowheads[{{Automatic, Automatic, 
+            GraphicsBox[
+             LineBox[
+              NCache[{{Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[1, 2]}, {0, 0}, {Rational[-1, 2] 3^Rational[1, 2], 
+                 Rational[-1, 2]}}, {{-0.8660254037844386, 0.5}, {0, 
+                0}, {-0.8660254037844386, -0.5}}]]]}}], 
+         ArrowBox[
+          NCache[{{0.5, Rational[1, 2]}, {1.5, Rational[1, 2]}}, {{0.5, 
+           0.5}, {1.5, 0.5}}]]}, 
+        {EdgeForm[GrayLevel[
+          NCache[-1 + GoldenRatio, 0.6180339887498949]]], 
+         {GrayLevel[1], RectangleBox[{2, 0}]}}},
+       PlotRange->NCache[{{
+           Rational[-7, 2], 
+           Rational[7, 2]}, {
+           Rational[-3, 2], 
+           Rational[5, 2]}}, {{-3.5, 3.5}, {-1.5, 2.5}}]], 
+      NCache[{9.625, Rational[1, 2]}, {9.625, 0.5}], {
+      Center, Center}, {1.75, 1}]}}, 
+   {GrayLevel[
+    0.8], {LineBox[{{0, 0}, {0, 3}}], LineBox[{{1.75, 0}, {1.75, 3}}], 
+     LineBox[{{3.5, 0}, {3.5, 3}}], LineBox[{{5.25, 0}, {5.25, 3}}], 
+     LineBox[{{7., 0}, {7., 3}}], LineBox[{{8.75, 0}, {8.75, 3}}], 
+     LineBox[{{10.5, 0}, {10.5, 3}}]}, {LineBox[{{0, 0}, {10.5, 0}}], 
+     LineBox[{{0, 1}, {10.5, 1}}], LineBox[{{0, 2}, {10.5, 2}}], 
+     LineBox[{{0, 3}, {10.5, 3}}]}}}]], "Output",
+ CellChangeTimes->{3.820575407801838*^9},
+ CellLabel->
+  "Out[100]=",ExpressionUUID->"eed35322-9907-4937-adc4-4602f25f333b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\n", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"board", "=", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"1", ",", 
+       RowBox[{"{", 
+        RowBox[{"100", ",", "100"}], "}"}]}], "]"}]}], ";"}], "\n", 
+   RowBox[{"Dynamic", "[", 
+    RowBox[{"ArrayPlot", "[", 
+     RowBox[{"board", "=", 
+      RowBox[{"Last", "[", 
+       RowBox[{"CellularAutomaton", "[", 
+        RowBox[{"\"\<GameOfLife\>\"", ",", "board", ",", 
+         RowBox[{"{", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "1"}], "}"}], "}"}]}], "]"}], "]"}]}], "]"}], 
+    "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.8205061169387302`*^9, 3.820506116966717*^9}, {
+   3.8205079959783316`*^9, 3.8205080318992815`*^9}, {3.8205110034043407`*^9, 
+   3.8205110264568434`*^9}, {3.820512657466211*^9, 3.8205126581348295`*^9}, {
+   3.8205129231656*^9, 3.820512930318512*^9}, {3.8205735740204496`*^9, 
+   3.820573580290866*^9}, {3.820573709190545*^9, 3.820573735632435*^9}, 
+   3.820573767604166*^9, {3.8205740146470585`*^9, 3.820574068428664*^9}, {
+   3.8205740987338543`*^9, 3.820574117368018*^9}, {3.820575036735911*^9, 
+   3.8205750394863453`*^9}, {3.8205751406878667`*^9, 3.820575140819302*^9}, {
+   3.8205767302105637`*^9, 3.820576748707299*^9}},
+ CellLabel->
+  "In[150]:=",ExpressionUUID->"4fd230dd-ad61-44ed-8e20-547b817d46c8"],
+
+Cell[BoxData[
+ DynamicBox[ToBoxes[
+   ArrayPlot[$CellContext`board = Last[
+      CellularAutomaton["GameOfLife", $CellContext`board, {{0, 1}}]]], 
+   StandardForm],
+  ImageSizeCache->{360., {177., 182.42560000000003`}}]], "Output",
+ CellChangeTimes->{
+  3.8205751111135235`*^9, 3.820575141692257*^9, 3.8205760406884985`*^9, {
+   3.8205767201163015`*^9, 3.8205767494358826`*^9}, 3.82057749912398*^9, 
+   3.8205777708484554`*^9, 3.820578010570154*^9, 3.8205782482829037`*^9},
+ CellLabel->"Out[151]=",ImageCache->GraphicsData["CompressedBitmap", "\<\
+eJztXW+IVFUUn3VmXu6fXGdxG1EXtpZQcU1SITMkykxXS90wTZNqFU2JLVEL
+hUAiyVjKoCgSA6n8E0YSQtSHwqIPElQf6psR+cH6YBEEgpTF7R3nHN+dM+fd
+e+et4vv3YObOe/f8fve9e879d+59dx4c2rll0/DQzq0bh3oXbx/atmXrxh29
+9z+z3b9UbCkUxjwCn4kF/7cqFGofOtb5H/+86AebLx8FCOGzBk6uxIAYYVb7
+n5Y8dhSxH/pfZf/SQT/0/NDDcMQP2/1wQ46yoiB3H2CIOX7Y5YcVP6z4YV/O
+0CRDoXjq1Kma6RbGwBecF2pHKRLzoMCip/JPKPIhvKf/rrPEWHzW11CyB595
+T45oQHyAkrf5YYcfDmdE8pKWQ1CX7cXzCqI8vC7nXI6+GugqonZhWFFBrRhe
+R6Wf5SZVXwO3sRr42VGxE0pnHMtSLPqfHUynXZFS6cDznC26dlojMQN0PtNr
+SUOvV0E9abciYLtLk8wZ6nXE+15Qgh4Vcl/HzHBOkdr1qRbGtfhMtl5hVbn2
+JKbhPa5HZuqx5gyuDO8zBDCZezDxRthsy850zGLFh0OR1Lc7FnsJOOLlwzDH
+XkKtgcTyREgsxRBaRSiBu1MpPaAa+4JmJOSc5B0oIuppZ7SXcMQyZa5n3HPk
+HpQw1X2gmaN4j8usTB7qN+kIW44csehgSWTtHVdu7dEiq0V9pOrbwnghys7P
+9B0igaVf0I+c1xJK1vv1lfzWYg/wNd3IcFq5+Uwh4nkjg6fddRIkeT7JNR2h
+2lmewFiGxpqAXmdE0zg46Qibf6TCrrUaWbn1cp/OuBDbJD13433PF9mhFOke
+oXKikIXylWf2D8gjN555qjY2Oypoh1v8RCemY2glgJicGYTeLpEWbky1NLcO
+ONqMSF4nljT7PYk5PIK5/5aRqUMFPvMso3UdnFCNdakev8+YwkKM5TVyEUsC
+T+0GQZcQ0W9k78LnIMZ2zfLij4z+/Cs0/QHzMtT6SovO4GtWU4yDKmibZ2ca
+ebMKvHI0LtORMPcNLejeHK2hewW71i3y1hDWfxmO981eEFNrU/Vl0jYb0MdS
+B8FVAlbqaw6roBdrvxMP7c6UIvWHc+ZryyzN40VLZZp2Tm3AY4LFe1c9lceZ
+TPqZbWV5moNcid2JjdN8h7a6bZYlHr6etMjci/Y7V7wDqpvnaLn8lAq8WTkS
+JLeqWgv1boYlzyZc4kcV9DZA6ztiIvWDMve4/1bm8r1NZCUPrG2E8JcgJ9V5
+ML9Inrbw1KimJVaqu9OOds1lYn2YyXDfVqeY2gCiX7RYzAWWWhWfYS7dreiZ
+k1soSnMv2vJFCzf5C3M2mc1lDU/zqQDdKwKbntqkyMyv4u+enEFkaKY8nVM1
+rwFItiHPnSpKbSAxzVem2iqeCMq3eK2cMceCf0f39cDvn1IjebtqbF/MKPKF
+UV35var1xKQRVRGtYXSMXkZZ+IxFp2OuS2NTOaWFITrTfSHfYEozGStvc342
+puCFsNKaXbkfn3w09TU7tDJ3Gn/LdWSOjIKE0vSbppEcbUNLfs1flb2Mh6ew
+VkBTqTkjpCr1iS+KzOtUfVk8o517KUDxFWKtzgzUZwWtdgj560VmKicObRqZ
+twms0WxxuaAr3n4C+3lLWZLfwl2hgtYGWH7HUH5XNn7SUk6YkbzWgF4OwM+H
+lphKIiSeUEF7dgDtWl71mT5JhUcZpaZg2JMwaVh5ZZpXnmRkgb45X9/M54bJ
+D2RnodU3SZPm/Qw7sl/II88JOVPVtxdJk3bxGDay0JpB2isA4F8KaLvlSkxf
+qcATll7EZk3yXKwlBlTQ8lxKuMRUVT+29nKEEVFG+6UxA4SLNLsmy3k5Awy8
+NtPZ7lP22s+cygzGAC3/FGS/W9lraxgVdFlTgZauQ2Amq8gZXBkW+F89AhIQ
+Jfwtrz3OOpKvMWoxsgxg7CCyQJq63Y8v1GbA3RmgzHalENU4U9jFcvtPI99x
+lrN8pnCcEA8R+0U22vGNVpXHVfKQCmZOIIQ5dagZvlaB1z1HmVE0NvdUMF5r
+z9HXFA2a8tCyP064xH5V7/mraIgDCUTYRtXjhWvhrG8L0tzHIbWr74RanVeo
+n/06FGNJPifdakTBTHa1EOzQFPZurBu6nFAEX2PRraF5/6lkZOoX8hH6AVAv
+rQ6xu/eMTBWGBsSRBCH4OK3UFFoaS05A/cKJeSReTYikvrcj5MdZFezQI683
+yxqStwDcz190ZqR3ZU0+/86mmGgtUXYQtP4J1tBDbUC+ok8R+VmO0lC6pX3S
+FMN2VRvX0nsy0j41J0fFSH219LBI89sy4zxkHGaMn6vGuqY5hi9Q89lCLVBB
+P6sXf/+REUmwGag730yxFOTCRhXMBoAlHEy85IkUScARr7X5eWwem7bYxSrw
+kcs7GqVHClp+83u+SZCk2UtAdDIE+SD2ZBopzaY3zyJ5a6gPDidvOKG9zCFm
+oySsZ6Y1Jt2JluQe1ZITSvKe7lPBHCyEct+UkCOxkdaf4SWWG3xF+utCvMwu
+vQ24W0hReu99RJAjHz/tm0XvTMn/k0BjcEqR3lQh5nLO5qw1XQvPNatB8R3n
+pZZUZhjvUbJb6R52NWnLfFXEEsd0+lTNey73w+huSS+7VVA2y6gXPT5na47N
+pp1b2LXu0BRhhb7+xpCHKa5XQV+F+9+5TfUKdzVOBat5oqVK88B9KFPJGa8K
+o6Ql/Zr8nxOTEU17bmxQQY++jNbFbURaFyDvS25jX4P3SWsW4s8ySXh2/q9m
+RY39FyFO18oqTNU9T7sFfU8QrsHXlXpFbLlAt1UnK6E0qyroWy9X9W0ysckW
+nS4GKe+bZ5NsCVg2MZYNGlu4XWcRKdu1Gw/fcRhKIW9feWm9AzHyLq0mZqil
+aR+YrDDwuf4wNr73D185Ju9S28tQnYw9bG0Vb81opxC5toU9EyshzNQqJ5tB
+Ws9h+zc++f9WaDUz7fM1Rcjt6arRV+X+3zY8BXorhljJ95M2tG3N+4VIrEfI
+AsRalPbrG2yKi+ryHD0aO+es9H/0KzHkeye6lU8b62plqkOSiybLjt+cVpJi
+4eSylP9ZczmGZGHPB1+u5X/BXf6T\
+\>", "ImageResolution" -> \
+120.],ExpressionUUID->"0a9eb5d5-0873-4dba-9b11-6138030f8cdd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"ArrayPlot", "[", 
+   RowBox[{"Mean", "[", 
+    RowBox[{"CellularAutomaton", "[", 
+     RowBox[{"\"\<GameOfLife\>\"", ",", 
+      RowBox[{"RandomInteger", "[", 
+       RowBox[{"1", ",", 
+        RowBox[{"{", 
+         RowBox[{"100", ",", "100"}], "}"}]}], "]"}], ",", "100"}], "]"}], 
+    "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8205751049440794`*^9, 3.8205751187291193`*^9}},
+ CellLabel->
+  "In[153]:=",ExpressionUUID->"679b3413-ae2f-4563-8775-aa498d6e8218"],
+
+Cell[BoxData[
+ GraphicsBox[RasterBox[CompressedData["
+1:eJyt3X3k//tdx/FZMhIpiVnSRMpElsTEV/0RJVHrj5KR1cRETMySkfZHmRgV
+UxIZKYlpYpYpp2Vt1lqtbeecnV2eXZ5dlIws0e/3+/7un/nevuex1/ekw/H+
+vb+f98Xr4nn5eF68n//SX/mplz37Wc961i8+/P87vu7HX/T93/Cxq+/+3s+8
+9wff/sRV5694/7u/5QWPfOrqN370Tz/5Q1/47NXfveHF//ntr/z81dtfcvVz
+f/H1X7z67Wf/7k+86zc/9/C+z19+f91bXv3XP/PcL1z+/vxX/s8vv/GFn7v6
+rx/55tf/6su/cLnuZ5/71m/82u/8/OX5H3veT/78v/zZZ67e+MJfvzeEz169
++alfeu3vf/Spq1978MDPXP35q+7/49NX9wZ3b2ifvHowzFd86vJ75/ff+pKr
+p64ePP6PPnv12Etfdu/Vn776vvuPfdEnrv770ft/ePLyvh+7//ovf+Yyju7v
+PY3nBY/8wJ/87Rs+fhlH82+cHZtn69B569GxdfyP3/mue3/53OV5nd8f3ate
+95V5tI6Nu99bx57be1vnrmudml/z/aZ7T/+D53xl3XtP69Lvrk/jbXz93rH7
+e15/b7yNq3E7jwc/v+X2unVf+/Dyb3vyL//4ez55GecPf+HL93b401f3Nuve
+Anzqsu9d9+Cxr/7khb47+vvn7m/n8z56oZevuT/dD37i8rvzlR467+j8/N39
+ap2jh97TPnVsnZt38219OrY+rlPz6rrWLXrxfb73nf9+f4BP3qKj5hs9Ru/t
+q/Kgv3fsfp/TurjOXRe9dezvraN0JF3Lf72397QuzTc5oRzp/cqx5FHnjq/r
+lbvOq+u7v/saR+OKHpIbvT86ju6lg8bXsefFD8nDB4cXf/z+5n74t5798cvf
+nWfzaX8br3TfMfpMvnhd8/R65U3zST903n5LB873D59zf6RfWZfkRXwSvSsP
+25/G0987tm/xQUf5QDkoPfZ76yN9t86NQ33de9UzrW/zbH2bv3Kl66Mz9W3r
+1Lp4VN81v0X3HZvHkr+tc89tX5tH82rfk2dLPzS/6Ke/R1+tQ/zU+vXc/t6x
+8brfa16Nt/Vs3O6z9Nr85TP1inTW8+S7nq++bR2ab+fqneRD+9NztQfUF9pV
+2pvaP55rfzavxqceaF2ar3TU37uudeh57ovr3nXKyfa98bsf0oX83/Xyl3q1
+Y/vSMf3wgEy/9PHLMXpq/1yf7m8d4xfteO03+aJ11h7UntbeXP6Dvzc+7dTW
+qXXrOuWzdpxyXj5pHZQLrXPjaj6tr3qq/eq9S390nt216EP7qt9bv8bRvkrX
+zbfxK2ead+OVTlwf7er2b+2P/oH+39J3S564TtJJ9N8+Jt+yg5xP67XkbuvY
++mlPuu7a4d3vvkYH7oPr2njVvz1f/y96UY4u+139ot+t3k0eLP2sXo4+ndca
+V8flj3RUP0S/0l/vdVyu2/J3W2/1Y3Qnv7Vu+kGNW764ef7Ew/sev8Wn+qPu
+o3TluXaIfKN91FH8QD+1/e3+zuM/5Ui/+x75xPXSP9POW/zR/cpT6cj3Sge9
+p/moF5u/9JUeEefqPv0X5emJP5ST2hVL3zWfjsqtxqG9r1+r/aIccT20YxeO
+dNNP+OAt+Xy9nh+45UfJLyf/zHks/pUPxC871//qd/1697v16TnKVee18Nml
+j/R7fY5H9Yf+nPpYfRCdd+zvjTN+aVzpF/2w7o+PtLvVE4uetDOkY+1k8ZXG
+3e/Shf758oN6v/qi/dKOWviY+3c9zkev7qOi9+690Fv7on2h/+X4Fu7d+LxO
+Oax/67r2d+3//t766LeGV0QX/d11U+7Fd/q9/V3/Tr2qvtCv08/QH2xev3B/
+W17/5OW92hWuT3xw7yX3HvSxi97J38seVX44Pvd56Tvn2byUe+oT9W6/d7/2
+hbiy9rx0od+gPlD+L3yv9dI+aXw9R3mnXtWeWPEC+b/xKPejh+ha3KF1lZ/D
+dbMj9F+V/+oL+av3R2+NQ/5tX5x/7+l68Xvxm+7vPdF3R+WjcrPxNO74ovVI
+Di77qvGIP614qPFE9bL01jzUEytO137Jh9pz+qnyiXiFz9FuEx+OL5qnfK4f
+IV3o94hva9cbL5bek5vFv+MXcfCeU5wjfSF+Jm5uPKjnvuaDX/qrt73jIw/1
+6scu4yj+aPymo36j+77sbOlA+dv88hfDNdTDHcXzxD/FEeQz8VHltueNY+nL
+5pGcurbfPnxZx35XPqif9H9XPN14g/En7zNO2ThaF/0Z9bd4gnTg+7Vn5dOe
+G91H162f8jm5Ld27//0eH2kvdlz6dfGldt/Cl5Qr0rf5Jq5382w9xIOS/9l7
+ymnjAcZXzbdYuJ76Q7qUD9Qz0qf4avukfao/JZ+IXxi/vn7ePz78/V239IFH
+n79wIfdv2WvqSfN40uMrXqgf1P3tY3Ze+9958ib6aNyN1zwT9YbxFuNM7VPP
+0b40z8f71AMdzQ8QJzDe3jomV833ki5Odn580jj0I9yPZZ+bVyXOpx7rvuSM
+9mxyxrya9k+9rl2vHm683/rgH/98Ob/W9++5NT7lt+sgn4qD93z9DPP3olf9
+XOWf+sx4lX5G9kNyxnwR5bN6RPsifug58pPXGYeR3tVf2qnqW/FscWLtEPdT
+v18/Qf/JfD/tCvHanqs+PdGp44g+knfX9PqRi140Tyw++Zv7r3/rRy/Xd530
+I76lfGk88sXSQ/r5i98X/rJwcO3Q6Dp7RP0RXUR/xk+7zzyq7P3WV/9Se894
+gPSv3WY8P/5pPsYJfL78KD5jnEa/bdGh8tu8Bu2Kfu/5+n3i0NJHR+WGuI5H
+7Xb93/jE/Efx3d7T9ct+kj/U585bfFWccNH1whu97xQv1W/Sv9Fubt2NXylf
+xCfFI9Vv7Yfv6T7fJ7/GF/nj3b/wVPmh/TbPyXinuJr0pLwynqldat7pilua
+d7DoovUwD978ZHFX7TLnoX+X/Ot+6WXhaEt/LVxdul7XuQ79Lr34vJV/I/4d
+Hy08XJxjyZnouKN5iMoh44+tv3wRnfe7cYz0R36PfKb/7fjlg5vx1q/EvbMj
+0pPSW+Mz79rnr3im+RX6U/oP7qvxBP0S/WjxAe1M9XXrez2Pxy77dPJ/Vn7s
+4pPl7664/8oPMD/Y9fL6zhf+Jn8te1Y/1rym5Et001E8zbzpjvJF9N9z8xuN
+H96bxD2K+vDF3pMu1bfG+ZSb5oVkt/X+/p5ekZ59nnypnWGcRbxMvFZ60d7X
+LpdPer75rStP1vVYuIN+2SlOseJu4hjNV3xF+j75FR5XXrP867n264ojaVdl
+73RccV/jnfrB8kf2U0fzNbSrlI/iOfq37pP8b9598+s8/pW/V96tOIXxKONK
+yw+RPsRjlp9svuHK9xenbH7mvylnXH/1m7iD+nbVYekfLr64K7+4bspPcYGV
+T6Y8MG5i/ofxGf36VZfWddatJqezc7KjkmfKXeNuC7+IvrQTrNNZflX6xDwY
+43rqT+My6umFIxvHUK5J58qzFZ/W/nOc+mXWBYjfrXyNk11yva7/8HC/H7lV
+z+R+mVe46F9+UV90bvx24RyOf9Wvaj/ID8pB9bd4rnZ/fNG4k9P6GeYBaYev
++rqFXxunNx+v8Wtvibut+J7rZpx+2aPm6UZv1+vxbw/f94Fb/G48zzoc8xEd
+n7jjqu+5iS88dsseNE7Y+G/mFz2CP/KuW3yy+GPpjZUXGb1nl0Q/2em+V5xR
++aJcWP0M3E/jQgtPkj6S29lZxumVX+JW0p95A/ohjU99Jj4ZHWhvNc6V/y8u
+tOJX5ltonzf++MK8rGt+fd+tOI72i/FI+cH11C8wHne9Hu+9rHfjU3+v/Neb
+9vA7H9L1P92yd1YdvfiUdmi/uy7l+96sp3niFj9Kb8tfWHm9js+8B/lF/jPO
+YN2D9rh4S3I8uZ7+af+zi1acIPrSju/57XPPS87EF+LdC881T8C8FfE+7aWb
+8vedl3W6tj/fcytPwfiOeWvW8zV+6cD91H4sDp58MC6+8KnVL8Tjyuta+Zcr
+r9/9jr6u5/f4LTxW+0Z94P5qfzkv+US+Ur+IH5sHHF0bv+/Y/PSjo9eVd9J7
+9CO1P059gOJL6U5/Rr7u2PyMLy+cSD/9Gr979+yL4D6ueL36vL+b77X8qJt1
+aW+/xZ8rDnjiC/lg9VNQv/ke8xjEw/R79RPMVzIfu/Vafabka/2jVbfdvPQD
+o/OV1yu+0nXmA5rvJ668cNSFl+qnrbymr24/PHWLX5Q78oVyUntL/1w/RPtJ
+nG75IeLBvb/79APN1xEvkX6fKd608gLkG+nO+i/1qnnl4tzukziU9sjqm7Rw
+R+moc+Pk7p/5KdF74zJ+bryxvyfntdfN3139ME79EJSH8pX4mdevfHD5ot9X
+3Zo4kXi8+IhySf/OeLj+qfnW1isbnzePQjkqv/j3VffpOruuxpn0y6xHUg6r
+P633MN6mXpMPOl983ziS++2f9N3vxgX135V7q8+G9pN+c9dJz8pt5yndP1Nc
+ftURrX4j4p3iQ+JlrWvrZ15n/pr1jfKJdG7+uPpPPbbyopb9sfLylc/LH2ne
+5pFH7/1dXF0+0V61P5NxVOXvyn8zz1W5Zn1G6y+uqj4oDzI+kY4W/qOf6Ty0
+I92nhRf+9AOH56OXOM0pvrvy5OTDxRfqJ683j8d8AOtPjeeod833XH2UpIMl
+R5a+8Hf39SZfPHGpo1jrej3P913wNeld+1J8URxCfkuuJKdXvxLrJsV/Fh3q
+T67+Cvoh6fVVB6c9uOomrFNd9XcLT+x55XnHJ+rPk1298kjvaketfAhxPvN+
+rHOPTzq2b62/dXmup3Jp5RPe1R9/enzqiVvy6fq6D13uL17WdTfzUj50y/9b
+/U9XHy7jXuKkro/6d/UVth515dNpz8rfi/71/xddm7fo/i593/nCTZ5pvcHC
+L1a/gDVvcQbXV1xy9U8WB1SPrD7c4hLaU2sdV97PwnH7/fq9j19wWf2Z7rMO
+Sbz0NH7petUT2QfCfNCVl+LzjbOp59b1xtG0g43Ldr7kt3nnq6+r9LvyDvQH
+1v47HunnlH+46kiWHan8ERdXb8QH5lOHg8gnxkPEh7VTT/bqqqdf+KH5YMbt
+fe/Kp/J+6W7Z/eYhWod0sj9XvtXKP9HeUk6mV5b/px21/OyFF6gX1A/6n9qX
+7s/SF+7Hqnswvur4Vh/znuf626+ufVx9Y+xzYZ+7+Eh52bhO62B+uetsHHPV
+ly0ca+ntFafUPrHfQPNaceeVty6eYD63cXJ/X3kt/b197ffOpcvVR8zxyVf6
+H+6D+J3ySxx01aNp5y1/yb+bp3XCPeQvcX/jYfrh6ZnowLy3lY9qPPTkh+hH
+LHtfObD2S1x+8WXj0g8w33nFc+33pv268Lreb3zZPBD7pZ/6nrUv0Wv7Jj2t
+fvZLTy8+WHTX35vvqoM68Unn5a1mTytfVn2ndON8xH1W3LBx249c/NJ6AvdN
+v0a5Xp/Pjqe4RuNb+cxPn29zu87nhJNYx7TqZ9xn44Lm9SufPcYf9vlJX6++
+98uutj5MnFM/Vn9Cua/cWnWG7bO4sefu1+qj0z6Fr4RPlpfh9avvw4pPG6fW
+T7Oee+XdaR/EL/ZXMe/H/muNo3zF8Fb9EuepXWU9aPLk+rpHb+UJiHcvfGDF
+gZc/bV6+/bFc3xX3sC9V9BD+mTzqOp/ffSuOtPCeRSfaLysvdPV9Vb/4XQXl
+vH6f61t+Y9eFs5z866fvk/bEBV+WvozjrTo47RSP2mfKs6XXXNcVV7b+xDil
+/erDrew/nX1iPdeys6Tj6Mr6MY/yheNXvi1/wrxA/UD9k5vfw3mcflpfvKUv
+tR/Mb1r2qTisfUNWHpb2k3mJS25YJ9B5fCH/KO9XHWd1H/GHdqH2g3y8cPbV
+13PVEa++nPp/yvXVL8x1XTiefKt/LP608hGW3an95Ly9z3VWXuuvrPp/81+U
+4/HJKY9N+ln6eclhcVnlnPubnaj+WHVz2rONW//b9ZRfxLGs/5Uu9S9XXYx+
+sfynHtYeXvXBK061/EPXST257AH1t/yx+gWuPiraycuv0A5bfSnEAcTDzQdT
+3iw7ceXtSV/a48rxFa+Tfk/1FsUJruNM/3rxq1bc2nxM4y7KJ9dfurWuybiN
+dKsfu+Kzqz/CsrvNf9FOX/NZ9drOV/7Ubln2QeuSH7TqYNSf0Wv0sOStdu/S
+867nwuWWPhG3OuUBe67ds+oj1MfGi6zjWnmXrmf2kPaWdqfrvvDc1kE7wvG7
+3t3n9+30x+Un/Xb7yYgDKa+NK7k+0s3Cg5Y95e/2d1j4+sLnFt6z4oKLnn2u
+eki7fMX/5I/uUx+vOrmFW4k3eVx4xNIb7o/y3HU8+d/6wfo75oe1PvYD1u7Q
+/l9yVD9W/NXnKTe0f5Rv2v3mzXrf8scWjrvyMFa8d+kv8aOV36mdssbpfhjn
+UO4s/27FzZffsfJbvH/FoxeuvfwU6xmXvHMf1K/aA66DfL/W3/zl6Fq66Drj
+1PKHfQPVJ+qFhQeueuv1HSTlyKJ37TPtWsez7OhlTyx973NXfv0pr0J/Z8l1
+84tW/W/7YX8f4xKrrka7ZcXJVx2+58oT57vGv/ow9ryV97niRMqDu9bhyEer
+v7fxNOl95SVrF/rdoXB56yX0SxcOZH3eKT9aebdwjxUvEh9bcahlX8gf7r92
+cX+Xjk55ZtK1eK755cbP5Uvtz55vPeSpj6pyfeHc1lE4fu0Y6Us73HVd36fS
+XrN/kriVfJK+UT+K3y25U5y8vNfiVz3XPivKE/WPeRm+d+n/Nc7lT5z8f/XY
+ssPUC4suxdNP+Xfaoyt/Rn9TO2/hn8pl9U77s+op7mpPyK+rL5bf8ZFepfvk
+Z/i19ufCd9d31MVprI/U31PeLH/Svqrxh3lAyofwb+WA3yOUrk/4vfsmPS5/
+UXtr+VHia6ueQvrXPxJXWPx+vU5vuvShUa53/fL3tNOlX+0Q805WXrn6JLnm
+dxGUi9bNifOLs67vF0VH+hN+Z0N6d/7i6V4v3qsfpZ2sP5CeCq+zT4x5j/Zz
+kA6XXyw/iKvKJ9Lp6hulP7jyJdqXxr3yuZUnpzjBqq+/6Ze89dIXz+eJ57gu
+8rG4iPH6U12T/N7+937r21fen/aPek57dMVRV/xCvFb9IX6lP2n+m3FD93PF
+kePT+MN8DePoq3+TfvaSp66j81t+eevhd69cL3Ha5T8uPFu7Qr5eeOmS1ye/
+a/kVySnpb+Ud+/sJx3Ie5iHof6t/1aN+90B6WfGLlY8rXbsO4sDay0u+Op9l
+H4v3ittbpyte5zo37xMu9fT5h09NfLb9bf9aF+2AVccq/amP1cvaW9qji/6X
+/bL4Qvux9fD7suZnKZ9ctxM/Lrxt1eupbzqPjounZ5d3XPGMhVd0lD7cP+Mz
+8l994uqj6H4qN13HhZ+bX9n4o0vlxdLf0oX6Tvpd+bLKQ+3Y+mNYBykeqN26
+vgtrXYb+lHjWM6XDE180vnCS8ja0p5cde9f4R/l7fQd6yaOFe+qPps/DPe37
+sfp6Kpf1r40DidOtuq/4o3oS8WDl+Ik/tPtXPor6/671gvoh6kHz9syjip5X
+35X0iP0RVz5H58lpv1/h97lOuPmKR/r35t/8jNN1bL5+H1X84YSbLX6JLzo6
+Xq9XrosDrO9lmf9j/oDyYfV5Ny9t5T92FGdZ9S/rfuWY+lT/Vr207KjTcekV
++5krx+ODfk9viD9L76vvud8bX9/niH78jtaKy5n3YVzbPif6T9bjxPfR28qH
++Oq4wN7vFXf3GF3bp9U+nY3PPlL2+TVus/Ip9FdWPYh+gnpG/3/lrTpv9dLS
+MysO9kzllnpafME4qN+Z9ntl9ivy++PZKZ13nf2O4r/2t/u0qxrHimPqp2g/
+qj9WX8ve0/jUj8seOtm7y34ST1/8sr43IN01/vjEfmza6cYNHc/T10Hdzqc3
+72LlvakHlz3k/Br3SZ643soh7Ym1f8pRv7sivq5et7+K/BQ/RH/xif0k9Rut
+23NfV328uJPfK/f7fH6XKT5Vj7Uuyr1Tnf9Jny97aukb/WzlufGYFafTrzjV
+p6/62JVn5FH73fo08z/UE85vxSsW/Ys/9Puz+G/JM3Et8wyMA3Wd3yFr/eIv
+9YX6R7m+8oGN9yh3pIPXPuyPFH9E//3dPrqNV9zAfKT2z/wm9deqI5HulxzU
+rjD+svKnjafLz+KtJ7vE+IH9kx2PfCI/Nx7zpvxu4qoTUM+pB5U76nn5ot+v
+6eE1RzlmHeEal3Sb3LWPs/zjdzVWXEG9bP2I+XzKe/GB9tP+vdpvxpvNx5Le
+rINb32FaefInO1j5LL2pJ8yjFbda/tvK+znZSc57fcfL/Hn7AVT/vuhFuex4
+jE8oX1ae6DWd/t6x7677ZbxfeSguEf+nL5p39JP8bt7q50X30uWKI3uffa3t
+l9S47LOvn7tw/+w0+8jYz8l+18rvhVMtfaScbvzqD/Xryt9bdTnm97rvC+do
+vt23+ki3PtGLdq39R+z31u/h769/+F1t/ZiVF3vy1+/qx8uHyiXn1frYd0Wc
+dPUdUy+b76Q+WfnExo3sK+c8rBPWznRfxLfNmxI/VQ+tvDT9KOn+VGdvPFD7
+U3tI+0B72/py8S79kvSzeID+n32nxTXNa1nzMN4jPRivP/HHwl0WvtX14lqt
+v/2boxf9E+XKilf4XOll4avaidqBxl/MPxdnsJ+lcU/tKvP5ul5cTPxh4Qvi
+cOKyq0/LsnO0s8zP1P6TD/U79A9dR/HPjsmh5H7843ep1/emXT/9lLvW7y27
+68Q35qmseTqf+GLVHa+4lHQu3up3C+Uv56O/7Dr2HvXH6gvj96LMhxOPWfaE
+zxUvXfpUf23lB4o3as/5/Tr1o/EL7Vf9OfnSPuqtW3TS7+oNv7e78tVXHxrt
+zsUfq8/HCUdZ/crEcbWv7cup3tOP9P5+X/16WufiIOnf+hKvvCDl3uq/Yn8Y
+84q9b30fefmh+h3rPebx6A9rL7l+xgn1P8zPVY8s+dv12Uur7kk/3bq85KZ2
+qPa5cTDnL/+tvgjLzl55t/rr4ou+X9xQvHD1sY1+paeuT06Yr9V9+sXuq/HJ
+zpd9YhzH39f3tvV3HMeyK80LVG8od5cf7d8XfrPy1fXfrPNY9p1ysb+3P/YJ
+l17Ewd0v/Rf9c/M21Mv2mbEurfqFa731tlv1DuqHhd/1+6rvUe+Lm2uHWj9p
+vkPzN9+kOET6wedpl7Ve4YDd5/cIjbOIW8nn4lyty+onaZ1B4+z58q3v02+W
+D5WDzn99d8tz67X1t9Svy76zDnfhh+JO2mP9XfxLvogO9O/NqxRPvLbj/v6S
+D6n/oH+94kH6F+6TuJF+sXQSXYi7R8fX7/ngre86xDfLntUvtR+x332Ib82b
+0t7VXvD7U9qT1hU4/5XnLT6w+g/JL/aj8HtMK3922Yv6b/rJ4oErz8W/669Y
+t7D6S4uDKp/1M5Z+XfHNhU85H8d9qj+xP6V6efVh0x7p9+guPdHx+n0fuuyT
+fOy6KVc6mlekvO/39Ez2XfaPdpr2sXF++cF49sp3MX9p9dNY/HSyj7tOujJe
+6vekxdW0z9f3j07559LRspftF7PiHeqLZS+d4hR3jW+cjq2H9vaSV9a5WC8r
+rr36TopXy5/GFczj8th6xw/i8PGL/QmWnnGfVz2nfsDqP6gdteKAC39Urhun
+WHaL3wlY/QIWP57ox/E0L+275XdoR5kP6vE0nhX/PtXtGC/ouPoZKu+0T91f
+rxd/Ecc3z0c7xLiCuHl64u0Pv18hv0T/8YX4u3mQxkP0j9d3tuX7FddY/VLU
+wyc5qVzrPvFn9Z96W7tFfpYel3xWX+pnW9eo/+8621dN/XYaz/+X3lh+mDiz
+6ytfOS7jEKue33xp7fjW0aN+f/FU47LZT9pp8ZX+tfXC+g/Sl36r+6neMO4W
+vTR+6wpP+yffLftPXMa8rVM/2EVn7rc4Yfxp3YJ9eMQ9tDNX3eL/le7vyj83
+/abHHtod77/VV2zlwxl/NX9IehA3Wfl7xrGS++a1Rdf9Hr1nl4mvZ3/FP/KN
+8te6Re0j85QWfRm30v6uH3u4Rut9shvMjxJvUV/JH+aLSqf6sad6InEw7VHz
+qs1zUX+ufrL66dHdM9UbK6+kv5ffZV/29ks9Lf+vev9VH7zsSe3C1sN8wPhC
+faG9ZT7Pwn2NKyunlLvSo3S65IT+e3xt/Dv7XP9v2fsdF1688rYWbqnesR+P
+dKW8M19ifU929TNZfp19PYzb9Pe72lknf6O/Xz/3ceI377uFD53q081/MF90
+1aUu/tAvaR/0q/2evHXZCxfTXlz1HAvfWfjnikdJT61ndqL1xqd+ENr75qOI
+86oXVl6vfmTyx31TvrvPxjs61y452YnqFX9fuOFdcYWTP3UTv350rnPnyd3V
+B9Y8GfsSLTt35SMrl7VTVv6U+mrlj6960vXeU/6O575ff0u9bDxw2Tc9d+W3
+y2frewPqx/gpvOOaDh+/7LtyWftIHNL+WSvPdPUh1i5ceXUn+j/xwck/X3WR
+4unqD/WweRGtq/kc4jWnPlCrb6J1MSuPfM179XnweeoZcYTFH6sv4MrHNI/J
+vEz32fHKd/bVEWeTX5R3+QunOJp6w/oB8zS8f81n6YmVx73w3IXHLT2ifpQ/
+zBcxjiyfrO9KhesZn1YerP7E6pvlJ8pXK29t4SHyq36V6yTuc4qnaZ8nNzrm
+V9UfK/vR/kKLT1Zf9uxk7fplz5xwxlP8wHig66a9rB42niZfaBec6Pykp052
+ffze9eaHru+grH6JXW9fsOzYlZcjna645KnP9uqrpJ5Z/rd8ufrKrHpU6df1
+9j3FacoveNPb3nHPI/nILf/deOqyA3t+fo1yzHnJ54v/T30iVz6G/ob50PKh
+dr91+Kf+fOt7G8ueXnylvbD6LUfn9rsy7tl+m7fYPocbqXfFj8S/lf/W/y48
+R3pW7vge7bxTvPauOOLSH+LW5qsmP8xHsv7VOG7zMO6jH7DwJ+lSeaE/pT63
+rlD/0PzqlZ+56idXPEY/f8lF6eeUv6Mdqn40P8C6PPP8rO82b6p9T++7v45H
+PXeqa1k4vPuwzpecvCs/LP9g2Xf6Ccoh9bB2butkXpV5g8qf1VfA/be/g3bo
++n5195v/Zb2//s7qh7H6V64+yM3X9V95AtavKx/1m83rd3+kf78j4f4teaK+
+7fpV77nmZ58X1+OUByKOe1f6X/7Pyk/0aNwhPWv+lHEKv4dkvGT1AZfuVn3t
+iiN2nfny1il0ffaD9bN+l8e+Beu7EeY5ayf1/p7fOE7xKXHuhTsbF1a+6mdn
+56bP7U/qd7jkI+0N4/P6k85DPEE7UX2tvDBfYfkXJzxQfV6cr6N6cOGX9iUy
+jq88Me9fu8r1X3We4iDWG+oHaU/0PPfdOJl99+wLoN2yjuo//Y3mu/rk6H/p
+96rnlUsnfzw6N5+v/WyfrJfpOfGVdQLmXRcPVw85386NR3u9eM3iC/2e+GPF
+cZRH5oWt+K9xOfsiL3sz/81+Uub/my+gHabdYP6d+6tc7+j+2Q/C+Kx0ZJzG
+cTR+x7vqRFddovFs+Wf1l7Gvrvnojle5Yv2ffUMat/UX9uPrPeGdjTs+0a9T
+rmofrDqb5XcsPEC7Xb9JeaKcFqeVPtWL1msqZ+2bLV90tO5X/FC5k9zVHljf
+71z1gOqPxe/Ny34Yq7+r+Hh0op3ZsXVKj3e9eS/aH/pX9rcxbrTerzyRv09+
+x9ILxQF6fzjP6q+sX2kfmxVfNM6nXLGuxbyPlVcuHci/8of6wHxQ/TrtnOio
+Ov/Wz/p+/fmeez3/Jy75qekjv/e37CLHEV/qZxgPdVzL/jI/w7501ld1rt2i
+X7L4zn5tqx+GdSvGQcXhxY+X37DqobRz7f91wsmNK+lv6Ufrv4jDiv8su0G/
+QL2in2v9l/5u+nX1R1OeNC75or4vq89447jZz/t9t+ph1AervknczT6w8pN9
+Zcw71D82PmddZO+tTiD6sR5f/NXnmCdlHcPC7bW375rHsvIyrIMSVzLut/A/
+ce3FT47T56jv3A/9Uvlq4Zz2q7dOSL0RfS67X32pXC4vWz/d+amXkp/pa+tA
+lV/WtXeML7NntDekA+1X8yDaN+0m/djOm392ufprxS20k1cdgPxsPveKGy/+
+WPJ79c9c+PzCz5dfoH4xjqu/ZF+nZQ9qT2i3dVzfu7R+KPvYujr9k/VdZ/Gs
+1Y9p1cvrHzcu69JcX/uWxRfWca48F/EPcVPtj95rnw7zcZQv6m3z2pTL0oX4
+mvLP/hOr/8Nd8+1dD/1Z36/dvvrC6meJGy273XiOdoz+h+slfqz9uOqPxJmV
+X2u87rd2sPyuvdJ1C1/p/dl/9ndbOEfvzX/J3ovfsnfke/O4lTPKv9ZLP8px
+izOId636nOhUO8H1cd/c31O8X37ouOhd+2Pxvf1e9XflC/MsxbeSP9Jhfmt1
+feLX7YtxFONrfgfa/XDfnY9ywjp4+/sYn1XerHEm75afor8gniruJu6w8olW
+nYPnS+9Jv/bRd3+1h83Lk3/E5fXrT/lqa176J91nPMV6M/Wjeb/qb+389d2i
+lW9hnmT5gvqd18dH53fvVz5w66hdvezZhauLq4oj2CdUO63zVfdi/FS7XX5f
+uJRye+Gjp74p8oV0LX4vvql/p7w3D08+WXW++oHipCv/yaPXSw+9R9zNenBx
+Eb8XtepR9MfE/bR3nX/8cH3+2Kx/WXnI+kunen33feHZvm/hwdppvtf3a5eK
+2/n9bfuW238pfvDv5qus77ytvtLmGa06Eee14mHS46pf0P5d41n5m85POzu6
+0X4St07+rLhv/uxN3OBDc/7GbZQfCx/y3O+9rzi+9cDWzZiPetc+QOb/iJ/a
+N07caPn79i1b/o64gt9pLe4hrrq+2y2Otb67IN2pZ/RjVx/3lQ8oXtP89LON
+o8mHd/2ernJp4RDWJfqdaOO14mj5ge2Lclec13PlgPu28nOWfbTqKI17mzeu
+XF/1iqvfwuo7ZP7Win/nZyVnom/9G/Eq+7WXT9M+rvwi98n84OXnKo8Xri7+
+JP27bsoR5ePqK6CcEQdZuJV9lp2vctx8YeXdwn0W/y4ceuGwzudk/5zyXtf8
+VpzUfMWVV2m/TflFu2vJJ+3V8J7wpuSN+2Wc2nxj7afijl0vLt+8xCO0C6Wr
+9uVUD7PyMbWrxSPEXbSLlh950h/qIeWucQjzV82fN99ZPpW+Vp2A6+n4lQ/e
+J/7gPukfru93rPxz+2+sfBflgePRz3Qeji9+aJzWLZpXkR1V/LB8FvvG6K+Y
+f7Py45R/8oXro9+gH7bie+KF6h31m3JSHHrVIS/cavVF078RpxOv079Srqw8
+J/FU8w9PeTHPtO+CfC6etfo1iX+sdT3lLZhf0+/Ou/VKjpeHEZ9oL0rH9kNc
+cUP5yvrH1RdIubb6cCjvxLu1j4zbaN8631W3eOqbrH+0cGv3beUr6l/qF658
+D+VN1ynH2p9lXy2/UH/lFNdx3spt7R71wOoLtPoHLPtOfbPsOeX7yh+y74b4
+g/S9/IBl7y2/23Vwv+Qn6WP1gfI7P+LzxtmWv6ffvupaV/xc/2nVuxr/Wv37
+en/7qf+uPW1evfVSrvOyc05xUOfr7ytP59RHwrwj608WPqm9EL3kPyfv8787
+Jn/Vg+pp/ShxY+Ph8s3ij5XHJ15x6tunfaS+Nu9Ce0zcTztHu0v9L305Pvlh
+9VkzPidOJP6S3at+KP/NOl/tXu0y5bpyZOHES65Lx/LPqW6++7XLxAsWriZ9
+Wo/ourRerWt+h/6peWjyhUf5VPrQTml9xH2UE8rJZW95vXkv4lrGnc0XML9j
+9W874T+rH6hyYPmJ4pONq30rv6Pxl59p3pRxKOvf5BPxv57XMfrpOa7H0h8r
+HrTyOE/168te0N9qfn5/Pj2R/si/br06Ny/Deirtc/PErZtofsteXTir81WO
+6ycufHH1qVfPyA8rb8lj4z/FM52Xfswpf0C9Lp1Gn/mRfi/H+lLjjCu+bh2O
+z6vvqvyx/BH9BP3u5W+c6nv14/zen3ifcYnmozzpd/01ccKO4b7Wd0h36ukl
+F8QNmp9270089i0P8YFHbun1k58pXa58PfnAOmD19OoHsvLptGf145f87Og+
+x3/2B/I7UX5vL32jX9rf1TPd33vTU/2+8iCch/uzcGGfo12x6ngdv30N7NMn
+nmMe+IoD2lel5xYH1M+zn+kpD0m7VP0snfU9zuv3vPlWvHzleWifivOsOKN+
+iPlO8odybPUFkh9P/KE9svobWv+VXCwPq/MlX8X1/T7I/wKkPkL7
+   "], {{0, 0}, {100, 100}}, {0, 0.9702970297029703}],
+  Frame->Automatic,
+  FrameLabel->{None, None},
+  FrameTicks->{{None, None}, {None, None}},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, 
+    "DefaultGraphicsInteraction" -> {
+     "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+      "Effects" -> {
+       "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+        "Droplines" -> {
+         "freeformCursorMode" -> True, 
+          "placement" -> {"x" -> "All", "y" -> "None"}}}}, "DefaultPlotStyle" -> 
+    Automatic}]], "Output",
+ CellChangeTimes->{
+  3.820575122215128*^9, 3.820576073582878*^9, 3.8205775203117743`*^9, {
+   3.820578298298991*^9, 3.820578307992543*^9}},
+ CellLabel->
+  "Out[153]=",ExpressionUUID->"7e000da7-9c07-4b93-9bfd-cf225c1f492e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ArrayPlot", "[", 
+  RowBox[{"Mean", "/@", 
+   RowBox[{"CellularAutomaton", "[", 
+    RowBox[{"\"\<GameOfLife\>\"", ",", 
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"1", ",", 
+       RowBox[{"{", 
+        RowBox[{"10", ",", "200"}], "}"}]}], "]"}], ",", "100"}], "]"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.820506181722603*^9, 3.8205061817385945`*^9}, 
+   3.820574239053787*^9, {3.820574291943098*^9, 3.820574328683675*^9}, {
+   3.8205752208050485`*^9, 3.820575227886406*^9}, {3.820575345185959*^9, 
+   3.820575364230241*^9}, 3.8205755715391874`*^9, {3.820576784053189*^9, 
+   3.8205768045429783`*^9}, {3.8205778771155353`*^9, 3.8205778859255652`*^9}},
+ CellLabel->
+  "In[154]:=",ExpressionUUID->"b56a672a-1bb4-40b7-b4e8-8fc4767a00d2"],
+
+Cell[BoxData[
+ GraphicsBox[RasterBox[CompressedData["
+1:eJztnUGOIzFyRRu+ic8wB5g7+AgGxlufx75J38AFjFda1a6BAQwY8MJHsGc0
+7AI/+fL/YEopqZQNNAipmGQw4kf8CDIz9Y///K//9Kd/+PHjx5/+//9//Gj/
+/veP//nnv/77nz/++7/99d9//27b36v9Ht02Of/lb//+a2hV/vl6fg39df3t
+8x/+9u8vv/u3zzquXv9oPbl2Wz/3n+dZ9KT46e1+Abt//pZfr6d5CF+KQ/qs
+cqi8dF37O9mjjdfavv+v33pw42qr4zo7UPx5tri0jefPwU4aL9z6td0bX/T6
+6nq/G3+01vkL4VDtSbyj+u/94Nfw/V47Hd2e/HFtKU+4/v3X8Jnieroeh1vi
+C5XP4TfNp/p+n7LOT5zPrfO78gfFdcXLKu5Vv6vrJz3uXe934Q/1t5QXnH2d
+PsguqV89S3vyx7VVO7s4neb5NE8aJ/v4e8H4RN9X47HypI6brrO135U/Wqv6
+0Pyytdv1HePD1Y1OPsKnjkvfO7us9nu2lvhA9aJxgfyNxqd9rKpfPUt78kff
+ql0VN/o94YjGp/0Hwm+vv0+sc2k/jT67/S/ad6nmR9+dP0i/178zz7txSc97
+6w/Fr+677eWFZ7WTa9PzEIoPjj/SeubReqi2J3/M5dQ8/Pr9z8HO6pe0Xp2H
+8hY3PuU/hEuKvzS/y7Oq+dF35w8XD+Y48vHX1Qlr6/86x6K69l3rj9aSX+hn
+8g8al3jc1aPP3p78cW1pX+n691+Yb7TrFUfNLykvcXWA9mtyuP2mlCfmfx/P
+PfbmR9+dP/TcQ+2g+p3XIxzH9Pt96/811JPt+1vxwrPaKW3pfJzwmNqT+MfV
+Lc/envwxl4/yR3d+4eoC932TR+ehOoD2r9L4m9Y3q3Z6F/6g/SHKD6rxl/SR
+yqc8Ns8XTv5w56D6mep3HZfsuJqXPUt78seWfON5Qx8Hx7qE/LXVIw6HKpfy
+F+HP5TXEh84/Tv6oyevyA5V7fu4+nsuTHlL9U56Q+uO78Ifq38X97X0Lji96
+/aPXu9qe/DGXj+JAta69jj/ev5TWrySXxgHKm4j3WkvrUblXcf7d+WOeR/4S
+O10wz9D9L8pPqL508s3x9on4fvfzD10H8QjlB+l9cz1eHr/e1fbkj235epx8
+Dn5Gf9c65jrPWD+4uLp9P+/4PBrhne4j07hH/nHWH9u4UT0qL1A9QXkB4SSt
+PygPany2ne/kdlnt9yqt4wnKt1w++up1R2tP/tiWb27vFmc/MJ7P74e9xPvb
+Th4X37Wfxqe2Dsqb3b5L2r4LfzgeIHtQ3uH4xK2f8gMa792f/6B1OH8lPyTc
+Op5+tfbkj0wP87zjY/BTwh3l/Wl81DyHeID2R9zzHS5enftXNdwQXxBfU5xx
++ygkD52HzeXg+72cXVb7vUqruFX90fmi+pX2f/S6btWe/JHpYftcnM4P1J++
+7nuhOJLNm9/Hofse/d/5PSx0blvV67vyR9q6vKLNk/KH5hWEz2pcezf+IPs0
+vVK+RnZy/Pyq7ckfNT2Qn7t8nfCn/k11Q9/vE+ueVF63L3Ir3L8bf2zvV+hz
+Nfy+AHff1fb6tT71zzmu2mW137O3Wu9TvZHex//d6g7V08kfmVxaT2hcv/Yb
+8z6N49rP1SOuJXwqT2nrnjPZa5934w/V+1zu8T6MdP8rtfe138fAV9d+433n
+q3ZZ7ffsLe3/UV3i6rxHr+de7ckfNT2Qf1Nev31f7biPRXFI59HvaV3zc3/G
+t5On2r4rf1D9oXGb6s60HiF52nyUP7hxUrus9nt0S/cLUP3o6vN3qztae/LH
+mh40/lNesl0n6Pv/L8O8FE+q+NQ4op/puRWVo6rXd+ePtK5w9krrzT5v/nqv
+ldr9Xfmjel+V4913rTtae/JHTQ/pc3rVvLS12b5E/b6olN90nyV93oDakz/6
+No3jLu919YfWIZonVO36XfiD6j0Xn2g9lA9897pD9XnyR00ul3dsj/PFFy1O
+u3kpf03Xp/mSfta4pu3JH/OW5KH9JsKHy3Or/OHqzKoevwt/uPMmd9+9jkf7
+Ao9e51HtyR81PdB9URRnqd69/n18r4njj3bd6joprrRxqZ4696+25dX4k+a1
+xCcah1L+mNcV+pxo/fdsX50/qrjSOpzGfde6o7Unf6zpQfGi8THD6bg/5M7z
+9urN5bvzuop/V8i178Yfvf7G92amdYXzF8cfOp/mAav166vyR2vVTor3a78x
+j0rP2R+9vqPbkz9qenD5peKS9oUo/1R52mdX59A63N9Jvmv/X9LW9frd+IPm
+7+0yPt+h8Zvul3b4SOOU2lH1SPcfVe2y2u9RLe3jUv3n7PKudUdrT/5Y04P6
+Me1DEC5dnHTn9G1exS3103XS/SOan+31j+/GH/r8z7X9+P1Z48p2fcfPDzrc
+kF1VX5RvvGv9sV03jL9T73D4rnVHa0/+qOmB8jfCk4sLtF9d3b/Yrsf5PJfy
+Y/Kfql6/G3/0rd4HQTzv79Mm3qk+9zHPTz4H/b57/aF6Uj+l+9nPuqNvT/5Y
+04PyxHa+N+7/aB5K+w1UL7vxVK60Tu/94fz9D2p7O3/A/Qh63nRBnDnedjzi
+/OusP7bsl9/PcNYdfXtUPKc8/Vn4e2/90f5OPED32+s+kX4m/Dq5+7jd4tbn
+ILerj9o6VvX63fiDzi3UbvP16POmn6Lf8TmNeT3BcW3OK2f9oa3Ly2p51uPX
+86j26HqA/OHV9ED5h+LN7ae67/Xv2/sXn4Mccz7S892PYR7ilapevxt/UFy5
+/n3cz3I8Q7jb5iE+5yA5z/pjbkfHC2fdsd0ezR/uXO/Z9eDyN8LlPP8c43Qf
+Z39hfNBW43SrO9o4GrdcPOvXw/e/u/a78ofqb74POZ5rNHuoXdpnimfpftZZ
+f2Stu8+Z8riz7ujbe/OHu599Fc+P1oPLDwmHLu+8jjf+LqDTC9UrGufUD2if
+6la4eHX+IHxu12f8u46EA+WLlD+anGf9UWvn+Z1/H9HJH317VP1B+VcWT59P
+D9n9+z/xPk4Xf4gPSB7HH6rvfv7xfeK9Xt6v/nD31/Vy6POV+vzZ+Hstyg/t
+OuITt6911h9ZS/t+6XngyR99e1TcJv/TOJbGy2fRg8Ob7mtQHaBxXq9z+SLx
+R//9eP8Pjf/u9ce2PVWe8TmO3t6XYf3zfuP9DuQ3hMPUfg5PqV1W+927pf0N
+wr/jk6q+3qU9ij/UHpQnz/Oy59UDxX+K565O1uuJn1QOxx+0v0J+1uvl/eqP
+7bjN77+c22G8783Zg8ZV+7x7/UHjU1zJ8r2RZ8+6Y94evW+kcVbve38Uz6/q
+geJbWx/hNuWVNs58n8TzB/mL6vmsP7bln8f/sV5WPDf7uf3O1o9w4/zi3eoP
+x4NpvUH4Su9beff2aP4gvng0z9+q/iAe0PVt50H8POH2/bv8/q02jspRzV+r
+7avzB51P9HoZf2dL9a76oHxD/WKeT+Rx9LvXHxrf3X0Orj6f+5m/f+Vd26P5
+g+Z7df5w+Q21ineNt2n+2a9j/D0Rqjtae9YfSTveV6VypPWk8sO1vWDd4dZ7
+1h8z3iR9j/e19/L+HPqd/DFvH8UfLs6+ih4ovmn81/7Xz/x75+3vrU3xS/UH
+8fNZf2y3ZE+HY4r/yhtzu4z3YZ31x7zNeHB8P5nWh7ovqfY7+WPePmr/ivLi
+V+WPdJ+1Gn/SuNtaqsfd/tdZf8xbtUO1jlT70v7Udb4xX0j1dtYf8/qD+L/3
+Q77/el4/Pj5uP0v7aP6o+smz6YF4g/KW+Tzj70gpz6TyKN5VHrLHWX9sy3P9
+zO8lIfsqDnQ8Hacat876o9e/w4/qnfhceeesP+bt0fzRWvWbaj70LHpwdRTx
+h+ad87gxvu/EyUP84fB/1h/b8lD9MT8H5+soXhGPpHKe9UePb4ovygfNz9Qf
+bx2Xqnz9Ku2j+IP4nfKJZ9VDyh+uLqD4VI0jNA/1P+uP2jq24xDfJ0H2nsep
+8Vws1ZuOp3lImk+kdlntd6uW4sW2HPx+mbn+9svv9o9ftT2aP5w91S+P4u1b
+8YfGBXeuOo8b4++fpuug+d111fx1VZ70Osr/HlV/UB7gzq3UvtfvL1iX6PdV
+eTXuEY/R9Xt54dnqD13X3B7j+yD086qc2/toj4//e9tH8UfvJ1w/HqX3vfxB
+eb+rT1w9na6b5HfX790/d3JV+czFn0fxh9ptbsev945Qf+KVW+W9Km+qf8JB
+ls8fzx+tJT7crsfoPWX+vLDaVveRX609mj8I39e/83O6R/FHNf9z+R7xB90v
+2PRQxe9e/FO+lu73U+vqMRefHs0fpNc5j9D728Z8qMf/ZcDfKt6dHnVcsofK
++2z8ke5P0Dr6umN87ubW+1a34qNna4/iD4drjZ+tPUrvip90XuVBxwOKT9rH
+IDtQPHV5o7NLtf5I8aJ60Xy96Wnu12McPZo/FA/b6xmft6H6o62718OXvqs8
+TXJT/FJ7K7/r52fjD10n/X1+rjrul1N+d2seP+uPfS35EcXvo+OE4snFcdrP
+IPnTupr8gvRG66mun9an60jts63P+u+8P6r+UD5zeKV8QL9XPfz4+z8db/W8
+W+Phtt3H8wAdL/WLvfyXri+N86l9qB5blVP1+93uw3r0/hXFD7LrveW6fh7f
+E6X9KI6069X/tKX4oPk+1RuUnx9Vf6TnFLrONH9PefteeCB9u/rZ4VpxpfqY
+45/vo6juSzn7EX9X+ePWdqJx0jyJ6hBXL7r5a+34HrtX55Gj+aO1Wfz4afPR
+arsdJ32c0HEId05e4h+X56a8WtUX+YurP7Q/+SfxgzvvevT+FdULxBNqPxef
+iSf6ls/jmzzEC26fytXPitfq/lWKQ7J7uq40DpPdCI9766gU5+76W+P6Vu2j
++MPhVv2rGg8pHyZ/uvYb78dw5zbOn52cun63H014b+MdXX9of+efOl5rKQ90
+drw1LglHhFOVx/EH2Vf5ifIYwu9cv3SOOD5f4uIb5VcO1y7uz+3J96O5PKZq
+T5cX6OdV/Li4QtcdjffV9R3NH4TLub3W70fSvNfFuxS3pDedJ80vdD7a10hx
+VdWX9q/WH2pX9U9taf7VOLqKw5pexvMaF8+JJ2gcwivl9XM7uPu9+P4ud13K
+H4QDV4+ledtq/ZH6K8mV4kbHU3929elq3nx0+yj+aK3aycXz6vi1+MP3Zbj8
+ifJL1bPK5/zs1eoP5/cpf8zj1ddzlat+vYpPjTNqXxd3KJ4oPgh3Kg/tD815
+etznp/VSPuPiuNNf6j/pvDp+ak+3f5DyVRU/rj51+4npuqr43ts+G39ofNjL
+H8oPWt/3447n5i4OpvkoyZ/uQ6f8oXqt2iHFhRuf5Cb+UDtpvNN6tNmRxrtV
+S3VwWo9SnGrjUR1+bS/DvBSP6e/tc1o3uLrI6YHsSvUL1Wkkj+Jrb/1B85Le
+qvmZs0P//fi7JHvzv3u3j+IPysfIz1blSveHqnmI8+M2/zwfzPO0LA6t4+nW
+9Yf2S/mD9KV20jh2VP2h8xF/rOKMzuNcfkq8QfHa2S3LT3gfj3BA+0VpPe3y
+qxSPzq+rvEy4oXFp/Ypv9RNnv7QevHV7NH+4enweZ9bjxNwuF5nvE/08rbe1
+ndc9fr/J4Tm1k8O363+rfYMqfxBPNLtV4+Fqu10X8H3TLn93PKLrVzy5utTF
+PYefWjz/BLx7HNA63PWkh2odT/sE8/j9a1hvte7qxxn9SFvCi+I/5fF7tUfx
+R1rvE/6renH+T7hyPOL8gOJ+w4+Ts32v/lTN1x5df2h/yqtofXM9fwx6cXFn
+te3twb97XuUFwo/jh/S8gPbZiY9o3YQvV1elOCC/cdern7p81OV/ZG83Xxon
+HW9R3qwtretd+INwTPpy/lHdd+zH0fvsx/c36jiUf+pnyiOdfVO+rPZL7aP9
+b1V/EI87OeZ+M9aJ9/YXh0+XB6X5coaftn7+nXTKv8iPdL0pf1w/5/v0fZuf
+5xM+snjA7zcg/pjLNa4zjZPb+RM/R5Ti67vzh9t3VLu5PFT9w/mB2ov07/Cs
+41B+4PIWtz/r/FH1QuM8S/3RWvITtz6XV5Bce3Gr8vR5x+dgZ10PnWeQXgg3
+c76h9zPze6uVR7L1+vis4zm7kj1Te5Ceev2O73/Y3hfwz/NS3CD5XNxT+7rP
+hK/vzh+tdfFgW8+67837rrSvqXYgO9G4xEf9OF/3T7T9lup+E+V3Dk+k76p9
+UlxUx3fxVlviayfnvfyn59HxvilXB6Z5MNl5bocxXlL+1ffP40F1n8XxR5Nj
+Nd64uEz8qfZw51eqTxrXjePqTtJHGjfehT+cHslfVL/kJzqP23eneed5HcW/
+cT+lyUtyuv2AKq5Uz89af7TW5VOuLnT7QvfCr/KZswfhkPIYqiNo3ZTHEG+k
+enF4JT9V/yK7b/t5PR+d232si9x+oeNJ9QPiEce/bp+SeCvVwyq+V9uj+IPq
+Ts1b5t+P9z04v03jrrMfyX/9nt5Xyvtkq3VzNc+o4kn737r+0HGJt12cnfe/
+oN1ujd+GR80fmhwU9138dHVGWqcqPuf8VOd5N2+WD4z7bqvxZnsf2/8u1Nwe
+o3wOj/R3V/eofPS9s5/Oe2vcu/ZR/EF+RPViygfzvIHvE3c40XEVN3qd8zuH
+A8LVth+/Tv3h7Ojib1pf3gu/18/8ewMkt9u/c3W4y1+bXCTfXjvp9y7fcnGR
++PA29SzvL1KdoNc5/qN41duD8ybNN3U92mp/jTtH71sRTu7FH9t19Xg/pOZ5
+FP8pL9b+Ll718vjniVq+SeNV+cPVISQf6ZtwnPa/d/3h9p90/XP/0fOm++U9
+2/sjY7xWeYkX3P4Q8Q3FTcpnqutNzwdoXc6u7pygKq/GdcpHXD2S1scNfykO
+KU91dQjpl+LMrfHv2qPrj34eel+1x2ezV5ovOB4hXLV56HuXN6b84eSp8tCr
+1h+pXVy9eC/cahxp+iG/p7qD4oarO1zdrHhd1Qvhmdbn1qP2m9ePl+U46HCh
+87r8hfA355H6fS0Oz2pPimN9v+N4o7X35o8+D2MeVj21z4QDsifhnOztcEPn
+ldRPx3Nxn/YHXJ7k9F7FlfY/qv7Q8bL5xn2aY849+P7AXv7x/W0uL3D238bP
+uK/i5qnaydUfJOd8/ePzVipnVd7q+QHxosqjeS6tJ42flIcovp0d7437Kk7u
+zR+Or6vnjHQ95UEpf7v6Ucdv15G86T5suo+xt56o9r9X/eHyQNWDtte/78+z
+05bs2+TQeEK8M48X3h/T8wWVh/C6aqdtXuD6Xa9r36tfar5ZlZfkof7kZ44/
+NJ7RfrqTs+mB+EP9/lnqDqf3W43v4rCrc3t9jjzv+KbJoXZ3cceNW+UL0rOr
+k1fxsrf/vesPHY94X8+tKb+/lz+5c9d5fPbnI9V9TJXH1cnkZ9X1qlzEI+RP
+iufejoz7VVypHOl5ztzvxvt1XRxwOHR1D/kBzbcX33vbe/MH4Wsex0d+cDyf
+5mvunI30QvJTHenys7T+UP2s+v+z1R9pHCb9b9vPPx9XbV392OYl/yZ+WeWP
+1pI+FDervOrwS/0c327H2/X7IKh+Sf1vm/95HMoTSE7H967OcflqVW9723vx
+B53z0XyUb1P8prhNOHd84/RCfunif8p/Ts5qnK7GDecvt6o/XH3m+Hier12G
+8W69L0z2nudBjBtXD1T5Q/VF8lTX63Do7LfNX3QfId//WMUV2YNwTPZx8YXq
+PGdfykMU3w73ypdHt0fVH2Qvl5e4czvCLa2T/C7Vi87r8DbPP/399W491D5L
+/ZHysvoHxWnqn+Yne3FMdaXK7fLuW/FHP/9F+q2/H0THpzjs7OT4huyucZH0
+NM//+X1iDcfEH2neRuPr350/ON51cVH98lHtUfUH5ZNkR/27w7PbZ3D7Xm5/
+lHjM1VG0Hoo3tC9W1X+Vd0jf1fojzU813q3av+/Hvz98KzwT/sjuqq/5+uv+
+2OtVn4Nff66M8gKVn+Slv8/tsX6epXl7P95Pe5+1y0scD6h+aVy9zsWhtg6V
+n9q9uN7bHl1/6PeOhx2OCb/zOPIZ46QaB129Qvyk8lCcepXzD4qrPd7H82Vd
+N7VU36m+bu1flG+o3Vxdqet18zh/VL3u5Y/Wkv5dHe14YO6fF7QjyTeP0/5+
+fxfHnd85PyecpPtgWRy7X7yutkfXH27eNG9P62OHa5JLPxOuCTckv7bbeF39
+fYXH1R+r/OriFempl4Pfx7S3JTk07jlcaT+aJ60/NL40PagcVX24PMadNxJu
+6bxjvg5vj7k84/vJCB+Uh6j+0n2M1F8cnpx/3AvnKl/a76j6g/ax0jjs6gGX
+j7q4TnGLcKP5tYsj2ip+qX2V+iPV03z/ZcxD53bh+/TuheM0T6R4qnGT9imr
++5e0btXn6rrdOtVevTyfgh/el1GcVeUiHulxNL6vYi6Hf95cx6f4RfKmf6fx
+U3ys4jyNH4+qP7bjA9d/Gn+IR9L6VOXWOEXxm+RN6w7Vk4uDFJeoTeen/qv1
+h/6d1jdf/4fNC4mvj6rrdV3k19vj+N+9XcOPPoe+/3zVxSvFa38dPxff9NDa
+Kl7Tc4Q5T3y9t4pwuo2rT5Hf/w4NxS+9vvcP/h3dqr6q9k7r1kfXH3N+8e9f
+pnlo/W6d7hyG4ie1KW+78Zo+qvHkUfUH4crxvq7TxZnq/sGtWpcvOH3cV/71
+34V16yQ/3s57PoZ8QeNgk9vlR6m/unxR56XryG5Ur7j9PF3/Nl74PuZ749ud
+4zmc3Lv+UB4m/aofUBzX+bQf4cPZd7tuze+zSvXS/k68WbVLNX5o/9X6w+0T
+U/ygOsP5rztXq+LWtdv+xc8vznGTv1c6tZ/qZ3Wd5HeEA83/+vHYvvp9yr+K
+jzYP8UT/97HOdS3xkOop9QuKc01OOida3Y9wbZUH9bqj6g/K18h/UnzpfCl/
+pPGO9ES8QvJRfHC4epXzD9Uv8V/KE/Q9+em9+YNw5upa1UcVlzU81feDaH0q
+5/Z+5LhvsO1H4+93Un8Xz3Xd83FGvqY4qfpz+azzU+1PeiLcK5/sta+rb9Lx
+j64/+nnH95KlOHLzarxRnLt5XDwjuZ3eq3X3Kk6q12n/vfXH3L/9vsf2Pua4
+76ztvXDs9NLjWX8vc/y+rUPjqDvvUzncvuvquhX3bh9lPu/43jqqv4hHdR3k
+38RLqn/SF+GI8FnVt8ODy5vTOjdt57xV/z2dR9UfDi8U3918NE7TD/FWel7i
+5HY85/Y/VO5qffro+oP8i76nOot43+HzXvxB/pvmPxo/9Htdfz9vw+vHgF/V
+n8a7veulOD6Pm+P9VbQutWtrXf5B88/jM8VHOq/O60vHq+QvimOXp6b6dP5A
+8tA8z8If27zA97+5/CtrNd743+0g3nc4of60X+Xwqf5abavXa//V+sPpQ8eh
+ulDxnOL63vyheNX4Q3im/FhbirOaP7t9nL3rdXp39Xd//WXgGYqXDneUv+g4
+c/uM/EY4IX52fk7xX+2n/qPjkn60v7Mnjed4Ko239+YP0o+Ll1W5ts8xxufO
+ab/T8QVd7/Jq8gPCzd78Mc1PSJ5ejpHnXX3l6jnn9w7vKZ734tbViz/+/k+/
+d3m8xrXWEh9QXu3i8Op6FecUL8lOih+tpxqvkP3dOiheNH053iL/S/cXXBxz
+dUeTL5U39b8Uv6SHHo8eL0fxh8vzXTxO4wbtN6gdST7yA23d+shOhMtVfFBL
+cqbX7a2LyL91nWn9rnpzOLg3f8z1off5jPpSXFGeoXgk/Ln6urreeRxmP3Xr
+UJ7UdShPOR6k/Ij43cnn8sXt8xK+L8rxofKpytn4ZNX/CEeUF6i+qng5ij8c
+z7v+6fgOL1SPu/wuPdegOOnqydW4r3JU6w+9nvyuep6i66E46Xil6je3xrHK
+sZ1f8jltHx/p/PTrvKONS3pN8V1dp+Kd8h+Kk4rrto65vON+nouX+j3tE+j8
+bh1UZ22PfzHrG3mtrbv/7H+PrLqv5PITqo9SvBzFH2r3lE/n/sXyaX/yW/Vf
+hyenn7ROdHXKXv5QPVSvq/I8tRR/3L6Vy5eoTtXPt8bx/Nx39FOSV3FIeaAb
+T+3rcLu63j7/Hd9D4uJjj7/xfNyts5+/Xn/MefsyzEvxJR1f1+3qKI3X5Aer
+dQfhleLL3vhzNH/Q/qqTT/Wa9nf5APlfdf4UZ2l+tFe/FG/TuqTK8zQ+xds5
+r+fvb0nrx1U9Ovuq3Vqr63J1MfGK4w8XH1brz9bquG19GU996YPkm/vneN8t
+yU9xkPyM9Ez9SM9UNxO/Ki4cfyqu9LrUfhQHt/Pw568/qvO5PD4dP23dPprb
+v0rjH8WPW+mZ+M7VcW6/IsUx8TbxRu9Peq7I++fVOtG1bp007zweXXC9ZHf9
+nuJHyq/pfiON2/Tuxp/LM573qx31+7ndfX5Edqd1kB2a3QiHag+yV1o/kJ5W
+6w5dt/qP2/94Ff5w8rr9npQ/nD/RuqtxlOzh9qsp71ltq/vkNI7Kk8ajbTt/
+Dv6icl8/8z4yyXUrHDuctM/zusDdf6zvwx3zPYqzmX5539ThRXGi8tP3c7uM
+50C93r72xVx+sFp/EK5oXdt8wuvv9cDroXXQeKn9yJ6r+XN13qP4Iz2HS/cd
+XR1A8dutn+zgPiseaH7a37+13tUvKG9L9Vjlt7TuoPlSf7oXf1B9ofFC4z3Z
+N41DtF4Xf1brRsInjUN8RTyi+CGe0nGdX2znG/75mnbd9fvxPbw6v9ZVTg9p
+/bA9T/39Vtv5B70/fzwXSv3nKP4gHFKcc3VEmj/r+G79ik/HA1Sft5ZwpHnK
+3nMPlZv8XfVD1zv9pPYmO1D+XPWnW/OH2pXsT7w412/+XqgMX7xPUfUX8kdd
+VxonyQ8IB+oH+r2rP5w9tu3k/ZOuJ/vqep1f0zzkn2lLvEx2SvVO+DuKP6o8
+ka3fx6807ug4FPdIbsofXRy6V/2R1nHEn+68JLX39Xt+PsHZm/zp1vzh9Kd2
+1nx2G9/je0fSOJXmPy2fbG2Tq3pe2K7Tdbr9ZBfHU79x8ZPy7H6+D8i3+f7p
+Nj7ZZa0O83Hexatqm+4HV/Vew8/9+IP0Xd3PWp0vXTfFMfKLZi/1u3n+TOeI
+t6s/3P6E03taB1T17+RM/cnJuVePZO9mP8cHbTz9u+KJcJbic243PpfV69N8
+1dVn5A/Of2jdZJ/t/lzvqN0oXpJ8qjddTzV/d/PcGr/p+Wg6z1H84XiB/MX5
+WTWvqu7PkB85OdVe7nq3T11tVT+pf7e8TfOz9jn1j1RPun6yc4qnW+OY5NQ8
+oL9ufN7P4aQfJ71P1vNHG0/jlIsjih+Kl218Wp+OQ3KQnp3dVR4n51zfHNcJ
+75THp/lVOk+1TXHX+xW/F9DNdxR/tFbxROsg/3H2d/7h1k/jKB6v7QXtQv6X
+5nW3xg/No/htet2bH7rzV7WH27d0eFL86HWr/Ew4pXrD6Y3yil7+/Hcqtv3d
+P3/R+lH/lGdcvZnmg+Sn2qr+Va+6DuVThyvHB259Kb5WecfhVcdzelJ9pfMd
+zR9O765Opn5z/Y33SaTyOP9Xu7s8ROWh+W9df+hnV39QvGn9qjjROET2WN2H
+cnnt3nMcJ5erT+fz633MfL8Q4cqtU+1GvOX4jPSg4/byje8JnsfXr98DVHyR
+PVL9k7/qetPxU/5I85S9vONawqP6YzVfS/VVvb7an3B87cf3gbt45vhI5aG4
+4vad2vza6jrUr9z8e/exXNxUfaq+5/6V76eQvR3OXL3k5tH4MNf/en5E+Yv7
+nuq8VM65f/j3TszlGt8fTvxF8UzHpTituNJ+Ou/2fuCIp/l4Pu+juKC4IL0S
+rvU6kt+dP1ZxmY7f/k523hv/nV9Tnl+Nd27/hOou7a96J3u4/MH16/Xv70Mk
+/3S4IrlXcaTzOT5Uvyd+aZ9TvKR1RWoPh6smH8XbVb2SP5LdKM7N49K4b0V4
+V7kUd5SfqR1VPyrHXK/ud5vG+oLWPZcjf+5cr3f5Es0ztwf9rjvjwfXX65z/
+VPE5z1vG53RdPXsv/nDfr5630D4cra/vfxlw4HChcjQ8kd+Qvud+Pv6egdox
+jZt74xzVM8QfLm8je5HfqVzqXym/rPkTP9d9K/8gPqH+c32N9985/JB8xP+u
+Tur97WLxOOersY7QdapdaP40XhMfkPwUVzLe9X7m+hM+VuOotvP4OcZH5/8O
+Z+k+nl5P8+7VG+Xrc3n9+5BUTlq/xkHiSdU/1UW9f4zv80/tdus8mfRC/NDW
+oXoj/9N+7jPJU92/IntSvN7LH8QT6TmLyqM4Vnxrv5R3tT/FD7Wn/r3JQ35K
++JnreTwn6b8fn/8mexCOye/n+2LMZylOaL/D7cuo3HvzRuJVsgvFO/fZ5b+u
+/qjuR6R+2Lfj+73m+h/3cVP+IPyrnxNvbNv/c5Czx6u/3+te9QfFU6pLiGfV
+fq6+qf49zcdU75QHq73SuOD4qfUnPBNuyA5Znvj1u30pb2ocofpAca9+Mcc5
+PUfB73Hp5bzAOvP7lOd+rL/X6O9jJr/O6gG33+vx5XiF5id89+sc81nKI1VP
+amdXhzieSP/u7J7uF8959HPAp4vz5Pcab+b9+f4VwrHajexNuLpV/aF6cnig
+OKbrd/vNaf3nxnd6oDjoeCvVH9k5jXeEJ7WD4l3Xde33YfM316o/tfEdTvp1
+jb+fo+ukdRN/KF+5/ErHI3vN/ZCfH0zzONKr4o/w5fgwxav2J/+mdbv5afys
+XvG/e+3mI/+b65OflyX8u7hO66vqX/3axV+1m9ML5YXEy2md7Nahrf7d6Zv4
+3/kn7R86XiI/7PWldd/4PqLqPonze41/+lnH0zxD44+uR/Wk/UlP5B8U9+bx
+4QPz2G2+G99HS/FM66u+1fOZz8Gu7bPON49bX/tmipPr+D8H+Xs9fMB1el71
+KfP8+KHyzXGg56j6e5Q/fvR2HOsrtct8PeN95Loeh1Oan+zfj/8Bco/vqSYc
+6Prm8ox2pvnmevB2meN81Hc6v/tM4xAOer19DHqcX6/+5+MT+SXpn3C4bY8P
+tHsv9wXig+qB/WRuB4pLPxFvJC/FM427pGeSk/Tfx2/yM32f6hh3NY7T/P8H
+yJ/S1Q==
+   "], {{0, 0}, {200, 101}}, {0, 1}],
+  Frame->Automatic,
+  FrameLabel->{None, None},
+  FrameTicks->{{None, None}, {None, None}},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImageSize->{357.0000000000001, Automatic},
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, 
+    "DefaultGraphicsInteraction" -> {
+     "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+      "Effects" -> {
+       "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+        "Droplines" -> {
+         "freeformCursorMode" -> True, 
+          "placement" -> {"x" -> "All", "y" -> "None"}}}}, "DefaultPlotStyle" -> 
+    Automatic}]], "Output",
+ CellChangeTimes->{
+  3.820575573566029*^9, {3.8205767862499356`*^9, 3.8205768192611637`*^9}, {
+   3.82057787801602*^9, 3.8205778867061386`*^9}, 3.8205783236187143`*^9},
+ CellLabel->
+  "Out[154]=",ExpressionUUID->"29f02ba1-98d7-409b-a1ff-c10f474c4f04"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"ArrayPlot", "[", 
+    RowBox[{"#", ",", 
+     RowBox[{"ImageSize", "\[Rule]", "40"}], ",", 
+     RowBox[{"Mesh", "\[Rule]", "True"}]}], "]"}], "&"}], "/@", 
+  RowBox[{"CellularAutomaton", "[", 
+   RowBox[{"\"\<GameOfLife\>\"", ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1", ",", "0"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0", ",", "1"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "1", ",", "1"}], "}"}]}], "}"}], ",", "0"}], "}"}],
+     ",", "8"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.82057536728778*^9, 3.82057536924966*^9}, 
+   3.820575511068182*^9},
+ CellLabel->
+  "In[117]:=",ExpressionUUID->"e8a2afe7-b501-4451-ab9b-637189a185f6"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   GraphicsBox[{
+     RasterBox[{{1, 1, 1, 1, 1}, {1, 1, 1, 1, 1}, {0, 0, 0, 1, 1}, {1, 1, 0, 
+      1, 1}, {1, 0, 1, 1, 1}}, {{0, 0}, {5, 5}}, {0, 1}], {
+      {GrayLevel[
+        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+       StyleBox[
+        LineBox[{{{0, 5}, {5, 5}}, {{0, 4}, {5, 4}}, {{0, 3}, {5, 3}}, {{0, 
+         2}, {5, 2}}, {{0, 1}, {5, 1}}, {{0, 0}, {5, 0}}}],
+        Antialiasing->False]}, 
+      {GrayLevel[
+        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+       StyleBox[
+        LineBox[{{{0, 0}, {0, 5}}, {{1, 0}, {1, 5}}, {{2, 0}, {2, 5}}, {{3, 
+         0}, {3, 5}}, {{4, 0}, {4, 5}}, {{5, 0}, {5, 5}}}],
+        Antialiasing->False]}}},
+    Frame->False,
+    FrameLabel->{None, None},
+    FrameTicks->{{None, None}, {None, None}},
+    GridLinesStyle->Directive[
+      GrayLevel[0.5, 0.4]],
+    ImageSize->40,
+    Method->{
+     "DefaultBoundaryStyle" -> Automatic, 
+      "DefaultGraphicsInteraction" -> {
+       "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+        "Effects" -> {
+         "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+          "Droplines" -> {
+           "freeformCursorMode" -> True, 
+            "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+      "DefaultPlotStyle" -> Automatic}], ",", 
+   GraphicsBox[{
+     RasterBox[{{1, 1, 1, 1, 1}, {1, 0, 1, 1, 1}, {1, 0, 0, 1, 1}, {0, 1, 0, 
+      1, 1}, {1, 1, 1, 1, 1}}, {{0, 0}, {5, 5}}, {0, 1}], {
+      {GrayLevel[
+        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+       StyleBox[
+        LineBox[{{{0, 5}, {5, 5}}, {{0, 4}, {5, 4}}, {{0, 3}, {5, 3}}, {{0, 
+         2}, {5, 2}}, {{0, 1}, {5, 1}}, {{0, 0}, {5, 0}}}],
+        Antialiasing->False]}, 
+      {GrayLevel[
+        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+       StyleBox[
+        LineBox[{{{0, 0}, {0, 5}}, {{1, 0}, {1, 5}}, {{2, 0}, {2, 5}}, {{3, 
+         0}, {3, 5}}, {{4, 0}, {4, 5}}, {{5, 0}, {5, 5}}}],
+        Antialiasing->False]}}},
+    Frame->False,
+    FrameLabel->{None, None},
+    FrameTicks->{{None, None}, {None, None}},
+    GridLinesStyle->Directive[
+      GrayLevel[0.5, 0.4]],
+    ImageSize->40,
+    Method->{
+     "DefaultBoundaryStyle" -> Automatic, 
+      "DefaultGraphicsInteraction" -> {
+       "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+        "Effects" -> {
+         "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+          "Droplines" -> {
+           "freeformCursorMode" -> True, 
+            "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+      "DefaultPlotStyle" -> Automatic}], ",", 
+   GraphicsBox[{
+     RasterBox[{{1, 1, 1, 1, 1}, {1, 0, 0, 1, 1}, {0, 1, 0, 1, 1}, {1, 1, 0, 
+      1, 1}, {1, 1, 1, 1, 1}}, {{0, 0}, {5, 5}}, {0, 1}], {
+      {GrayLevel[
+        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+       StyleBox[
+        LineBox[{{{0, 5}, {5, 5}}, {{0, 4}, {5, 4}}, {{0, 3}, {5, 3}}, {{0, 
+         2}, {5, 2}}, {{0, 1}, {5, 1}}, {{0, 0}, {5, 0}}}],
+        Antialiasing->False]}, 
+      {GrayLevel[
+        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+       StyleBox[
+        LineBox[{{{0, 0}, {0, 5}}, {{1, 0}, {1, 5}}, {{2, 0}, {2, 5}}, {{3, 
+         0}, {3, 5}}, {{4, 0}, {4, 5}}, {{5, 0}, {5, 5}}}],
+        Antialiasing->False]}}},
+    Frame->False,
+    FrameLabel->{None, None},
+    FrameTicks->{{None, None}, {None, None}},
+    GridLinesStyle->Directive[
+      GrayLevel[0.5, 0.4]],
+    ImageSize->40,
+    Method->{
+     "DefaultBoundaryStyle" -> Automatic, 
+      "DefaultGraphicsInteraction" -> {
+       "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+        "Effects" -> {
+         "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+          "Droplines" -> {
+           "freeformCursorMode" -> True, 
+            "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+      "DefaultPlotStyle" -> Automatic}], ",", 
+   GraphicsBox[{
+     RasterBox[{{1, 1, 1, 1, 1}, {1, 0, 0, 1, 1}, {1, 1, 0, 0, 1}, {1, 0, 1, 
+      1, 1}, {1, 1, 1, 1, 1}}, {{0, 0}, {5, 5}}, {0, 1}], {
+      {GrayLevel[
+        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+       StyleBox[
+        LineBox[{{{0, 5}, {5, 5}}, {{0, 4}, {5, 4}}, {{0, 3}, {5, 3}}, {{0, 
+         2}, {5, 2}}, {{0, 1}, {5, 1}}, {{0, 0}, {5, 0}}}],
+        Antialiasing->False]}, 
+      {GrayLevel[
+        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+       StyleBox[
+        LineBox[{{{0, 0}, {0, 5}}, {{1, 0}, {1, 5}}, {{2, 0}, {2, 5}}, {{3, 
+         0}, {3, 5}}, {{4, 0}, {4, 5}}, {{5, 0}, {5, 5}}}],
+        Antialiasing->False]}}},
+    Frame->False,
+    FrameLabel->{None, None},
+    FrameTicks->{{None, None}, {None, None}},
+    GridLinesStyle->Directive[
+      GrayLevel[0.5, 0.4]],
+    ImageSize->40,
+    Method->{
+     "DefaultBoundaryStyle" -> Automatic, 
+      "DefaultGraphicsInteraction" -> {
+       "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+        "Effects" -> {
+         "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+          "Droplines" -> {
+           "freeformCursorMode" -> True, 
+            "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+      "DefaultPlotStyle" -> Automatic}], ",", 
+   GraphicsBox[{
+     RasterBox[{{1, 1, 1, 1, 1}, {1, 0, 0, 0, 1}, {1, 1, 1, 0, 1}, {1, 1, 0, 
+      1, 1}, {1, 1, 1, 1, 1}}, {{0, 0}, {5, 5}}, {0, 1}], {
+      {GrayLevel[
+        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+       StyleBox[
+        LineBox[{{{0, 5}, {5, 5}}, {{0, 4}, {5, 4}}, {{0, 3}, {5, 3}}, {{0, 
+         2}, {5, 2}}, {{0, 1}, {5, 1}}, {{0, 0}, {5, 0}}}],
+        Antialiasing->False]}, 
+      {GrayLevel[
+        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+       StyleBox[
+        LineBox[{{{0, 0}, {0, 5}}, {{1, 0}, {1, 5}}, {{2, 0}, {2, 5}}, {{3, 
+         0}, {3, 5}}, {{4, 0}, {4, 5}}, {{5, 0}, {5, 5}}}],
+        Antialiasing->False]}}},
+    Frame->False,
+    FrameLabel->{None, None},
+    FrameTicks->{{None, None}, {None, None}},
+    GridLinesStyle->Directive[
+      GrayLevel[0.5, 0.4]],
+    ImageSize->40,
+    Method->{
+     "DefaultBoundaryStyle" -> Automatic, 
+      "DefaultGraphicsInteraction" -> {
+       "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+        "Effects" -> {
+         "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+          "Droplines" -> {
+           "freeformCursorMode" -> True, 
+            "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+      "DefaultPlotStyle" -> Automatic}], ",", 
+   GraphicsBox[{
+     RasterBox[{{1, 1, 0, 1, 1}, {1, 1, 0, 0, 1}, {1, 0, 1, 0, 1}, {1, 1, 1, 
+      1, 1}, {1, 1, 1, 1, 1}}, {{0, 0}, {5, 5}}, {0, 1}], {
+      {GrayLevel[
+        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+       StyleBox[
+        LineBox[{{{0, 5}, {5, 5}}, {{0, 4}, {5, 4}}, {{0, 3}, {5, 3}}, {{0, 
+         2}, {5, 2}}, {{0, 1}, {5, 1}}, {{0, 0}, {5, 0}}}],
+        Antialiasing->False]}, 
+      {GrayLevel[
+        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+       StyleBox[
+        LineBox[{{{0, 0}, {0, 5}}, {{1, 0}, {1, 5}}, {{2, 0}, {2, 5}}, {{3, 
+         0}, {3, 5}}, {{4, 0}, {4, 5}}, {{5, 0}, {5, 5}}}],
+        Antialiasing->False]}}},
+    Frame->False,
+    FrameLabel->{None, None},
+    FrameTicks->{{None, None}, {None, None}},
+    GridLinesStyle->Directive[
+      GrayLevel[0.5, 0.4]],
+    ImageSize->40,
+    Method->{
+     "DefaultBoundaryStyle" -> Automatic, 
+      "DefaultGraphicsInteraction" -> {
+       "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+        "Effects" -> {
+         "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+          "Droplines" -> {
+           "freeformCursorMode" -> True, 
+            "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+      "DefaultPlotStyle" -> Automatic}], ",", 
+   GraphicsBox[{
+     RasterBox[{{1, 1, 0, 0, 1}, {1, 0, 1, 0, 1}, {1, 1, 1, 0, 1}, {1, 1, 1, 
+      1, 1}, {1, 1, 1, 1, 1}}, {{0, 0}, {5, 5}}, {0, 1}], {
+      {GrayLevel[
+        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+       StyleBox[
+        LineBox[{{{0, 5}, {5, 5}}, {{0, 4}, {5, 4}}, {{0, 3}, {5, 3}}, {{0, 
+         2}, {5, 2}}, {{0, 1}, {5, 1}}, {{0, 0}, {5, 0}}}],
+        Antialiasing->False]}, 
+      {GrayLevel[
+        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+       StyleBox[
+        LineBox[{{{0, 0}, {0, 5}}, {{1, 0}, {1, 5}}, {{2, 0}, {2, 5}}, {{3, 
+         0}, {3, 5}}, {{4, 0}, {4, 5}}, {{5, 0}, {5, 5}}}],
+        Antialiasing->False]}}},
+    Frame->False,
+    FrameLabel->{None, None},
+    FrameTicks->{{None, None}, {None, None}},
+    GridLinesStyle->Directive[
+      GrayLevel[0.5, 0.4]],
+    ImageSize->40,
+    Method->{
+     "DefaultBoundaryStyle" -> Automatic, 
+      "DefaultGraphicsInteraction" -> {
+       "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+        "Effects" -> {
+         "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+          "Droplines" -> {
+           "freeformCursorMode" -> True, 
+            "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+      "DefaultPlotStyle" -> Automatic}], ",", 
+   GraphicsBox[{
+     RasterBox[{{1, 1, 0, 0, 1}, {1, 1, 1, 0, 0}, {1, 1, 0, 1, 1}, {1, 1, 1, 
+      1, 1}, {1, 1, 1, 1, 1}}, {{0, 0}, {5, 5}}, {0, 1}], {
+      {GrayLevel[
+        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+       StyleBox[
+        LineBox[{{{0, 5}, {5, 5}}, {{0, 4}, {5, 4}}, {{0, 3}, {5, 3}}, {{0, 
+         2}, {5, 2}}, {{0, 1}, {5, 1}}, {{0, 0}, {5, 0}}}],
+        Antialiasing->False]}, 
+      {GrayLevel[
+        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+       StyleBox[
+        LineBox[{{{0, 0}, {0, 5}}, {{1, 0}, {1, 5}}, {{2, 0}, {2, 5}}, {{3, 
+         0}, {3, 5}}, {{4, 0}, {4, 5}}, {{5, 0}, {5, 5}}}],
+        Antialiasing->False]}}},
+    Frame->False,
+    FrameLabel->{None, None},
+    FrameTicks->{{None, None}, {None, None}},
+    GridLinesStyle->Directive[
+      GrayLevel[0.5, 0.4]],
+    ImageSize->40,
+    Method->{
+     "DefaultBoundaryStyle" -> Automatic, 
+      "DefaultGraphicsInteraction" -> {
+       "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+        "Effects" -> {
+         "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+          "Droplines" -> {
+           "freeformCursorMode" -> True, 
+            "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+      "DefaultPlotStyle" -> Automatic}], ",", 
+   GraphicsBox[{
+     RasterBox[{{1, 1, 0, 0, 0}, {1, 1, 1, 1, 0}, {1, 1, 1, 0, 1}, {1, 1, 1, 
+      1, 1}, {1, 1, 1, 1, 1}}, {{0, 0}, {5, 5}}, {0, 1}], {
+      {GrayLevel[
+        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+       StyleBox[
+        LineBox[{{{0, 5}, {5, 5}}, {{0, 4}, {5, 4}}, {{0, 3}, {5, 3}}, {{0, 
+         2}, {5, 2}}, {{0, 1}, {5, 1}}, {{0, 0}, {5, 0}}}],
+        Antialiasing->False]}, 
+      {GrayLevel[
+        NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+       StyleBox[
+        LineBox[{{{0, 0}, {0, 5}}, {{1, 0}, {1, 5}}, {{2, 0}, {2, 5}}, {{3, 
+         0}, {3, 5}}, {{4, 0}, {4, 5}}, {{5, 0}, {5, 5}}}],
+        Antialiasing->False]}}},
+    Frame->False,
+    FrameLabel->{None, None},
+    FrameTicks->{{None, None}, {None, None}},
+    GridLinesStyle->Directive[
+      GrayLevel[0.5, 0.4]],
+    ImageSize->40,
+    Method->{
+     "DefaultBoundaryStyle" -> Automatic, 
+      "DefaultGraphicsInteraction" -> {
+       "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+        "Effects" -> {
+         "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+          "Droplines" -> {
+           "freeformCursorMode" -> True, 
+            "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+      "DefaultPlotStyle" -> Automatic}]}], "}"}]], "Output",
+ CellChangeTimes->{3.820575514306332*^9, 3.8205761396432257`*^9},
+ CellLabel->
+  "Out[117]=",ExpressionUUID->"19f89fd7-bd10-4aca-9c08-5498998ba512"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.8205095938042445`*^9, 3.8205096066219206`*^9}, {
+   3.820573212262356*^9, 3.820573215266619*^9}, 3.8205743540668354`*^9, 
+   3.8205753810559134`*^9},ExpressionUUID->"ddd40eea-ca6b-4828-9568-\
+3888a33ebce6"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.8205753792559595`*^9, 
+  3.820575379257959*^9}},ExpressionUUID->"4c158b1b-fbeb-4064-ad38-\
+e8efdcff50ad"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{3.820575054360871*^9},
+ CellLabel->"Out[42]=",ExpressionUUID->"75015813-a5a3-4e05-8b9d-0d3def520c07"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Graphics3D", "[", 
+   RowBox[{
+    RowBox[{"Cuboid", "/@", 
+     RowBox[{"Position", "[", 
+      RowBox[{
+       RowBox[{"CellularAutomaton", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"14", ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", "1"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"{", "1", "}"}], "}"}], ",", "0"}], "}"}], ",", "10"}], 
+        "]"}], ",", "1"}], "]"}]}], ",", 
+    RowBox[{"ViewVertical", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "1"}], ",", "0", ",", "0"}], "}"}]}]}], "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.820509732731122*^9, 3.820509732742118*^9}, 
+   3.8205857422739315`*^9},
+ CellLabel->"",ExpressionUUID->"61073159-8ffa-46f7-b8a3-add9ff7d9c57"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.8205857327343817`*^9, 
+  3.820585733763775*^9}},ExpressionUUID->"863b9bc5-3650-407f-983a-\
+1476b9081ebf"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.8205763117081223`*^9, 
+  3.8205763404668264`*^9}},ExpressionUUID->"713e83d5-5132-4518-96c7-\
+7b34c68cee80"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Graphics3D", "[", 
+    RowBox[{
+     RowBox[{"Cuboid", "/@", 
+      RowBox[{"Position", "[", 
+       RowBox[{"#", ",", "1"}], "]"}]}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", "Tiny"}]}], "]"}], "&"}], "/@", 
+  RowBox[{"CellularAutomaton", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"14", ",", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "1", ",", "1"}], "}"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"{", 
+        RowBox[{"{", "1", "}"}], "}"}], "}"}], ",", "0"}], "}"}], ",", "10"}],
+    "]"}]}]], "Input",
+ CellChangeTimes->{{3.820576348160431*^9, 3.8205763495246696`*^9}},
+ CellLabel->
+  "In[120]:=",ExpressionUUID->"a8f64632-efa1-4e9f-9b0b-cb2a4a162cf9"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.8205857024457617`*^9, 
+  3.820585716930394*^9}},ExpressionUUID->"3051c76d-b843-4bdc-89f2-\
+c285bf939554"]
+},
+WindowSize->{571.1999999999999, 524.4},
+WindowMargins->{{Automatic, 255}, {16.800000000000068`, Automatic}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"08144e0d-eb4c-4ba1-86cc-7fcc901699f2"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 623, 11, 44, "Input",ExpressionUUID->"6bece105-22a0-43e5-baf8-6c2e80a96446"],
+Cell[1206, 35, 566, 14, 32, "Output",ExpressionUUID->"8f45d8b6-501b-4298-9ced-c9b96cf71d45"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1809, 54, 277, 5, 44, InheritFromParent,ExpressionUUID->"f2cb00f5-6524-4c24-9e14-0f7b18ecbc00"],
+Cell[2089, 61, 7273, 143, 65, "Output",ExpressionUUID->"31c08baf-ede0-4776-99cb-c269f9fc6668"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9399, 209, 670, 14, 44, "Input",ExpressionUUID->"7e3d13d4-55cf-4b7d-bb8e-07e44665ffd8"],
+Cell[10072, 225, 1910, 38, 205, "Output",ExpressionUUID->"a5f3c368-ac4c-4cad-8d1a-9eb214fabb00"]
+}, Open  ]],
+Cell[11997, 266, 177, 3, 28, "Input",ExpressionUUID->"aa6ebc8d-5eef-467a-a9ce-3e5403e27e30"],
+Cell[CellGroupData[{
+Cell[12199, 273, 259, 5, 44, "Input",ExpressionUUID->"5d4305b5-74cc-4784-b258-4ee48cbc95ce"],
+Cell[12461, 280, 7277, 144, 65, "Output",ExpressionUUID->"ebf66ce6-1bb0-409b-a44e-52c5438ab348"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19775, 429, 378, 10, 44, "Input",ExpressionUUID->"f3434710-46fd-4eb3-945f-a2c9f1ac61b7"],
+Cell[20156, 441, 19364, 325, 204, "Output",ExpressionUUID->"8625ab84-286b-464a-851c-471bdb2eb595"]
+}, Open  ]],
+Cell[39535, 769, 151, 3, 28, InheritFromParent,ExpressionUUID->"538240e0-c481-4faa-89c7-8fae7f650b40"],
+Cell[39689, 774, 154, 3, 28, InheritFromParent,ExpressionUUID->"680472de-16b3-4ca6-986c-62c2f8f2087b"],
+Cell[CellGroupData[{
+Cell[39868, 781, 252, 6, 44, "Input",ExpressionUUID->"d2b38d1e-4def-4158-b5d9-877f9d874ae2"],
+Cell[40123, 789, 31523, 675, 129, "Output",ExpressionUUID->"eed35322-9907-4937-adc4-4602f25f333b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[71683, 1469, 1324, 29, 193, "Input",ExpressionUUID->"4fd230dd-ad61-44ed-8e20-547b817d46c8"],
+Cell[73010, 1500, 3778, 64, 376, 231, 5, "CachedBoxData", "BoxData", "Output",ExpressionUUID->"0a9eb5d5-0873-4dba-9b11-6138030f8cdd"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[76825, 1569, 524, 13, 135, InheritFromParent,ExpressionUUID->"679b3413-ae2f-4563-8775-aa498d6e8218"],
+Cell[77352, 1584, 15416, 260, 376, "Output",ExpressionUUID->"7e000da7-9c07-4b93-9bfd-cf225c1f492e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[92805, 1849, 772, 16, 116, "Input",ExpressionUUID->"b56a672a-1bb4-40b7-b4e8-8fc4767a00d2"],
+Cell[93580, 1867, 14209, 241, 204, "Output",ExpressionUUID->"29f02ba1-98d7-409b-a1ff-c10f474c4f04"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[107826, 2113, 815, 23, 101, InheritFromParent,ExpressionUUID->"e8a2afe7-b501-4451-ab9b-637189a185f6"],
+Cell[108644, 2138, 11794, 284, 108, "Output",ExpressionUUID->"19f89fd7-bd10-4aca-9c08-5498998ba512"]
+}, Open  ]],
+Cell[120453, 2425, 255, 4, 28, "Input",ExpressionUUID->"ddd40eea-ca6b-4828-9568-3888a33ebce6"],
+Cell[120711, 2431, 154, 3, 28, InheritFromParent,ExpressionUUID->"4c158b1b-fbeb-4064-ad38-e8efdcff50ad"],
+Cell[120868, 2436, 147, 2, 28, InheritFromParent,ExpressionUUID->"75015813-a5a3-4e05-8b9d-0d3def520c07"],
+Cell[121018, 2440, 941, 27, 174, "Input",ExpressionUUID->"61073159-8ffa-46f7-b8a3-add9ff7d9c57"],
+Cell[121962, 2469, 154, 3, 28, InheritFromParent,ExpressionUUID->"863b9bc5-3650-407f-983a-1476b9081ebf"],
+Cell[122119, 2474, 156, 3, 28, "Input",ExpressionUUID->"713e83d5-5132-4518-96c7-7b34c68cee80"],
+Cell[122278, 2479, 824, 25, 80, InheritFromParent,ExpressionUUID->"a8f64632-efa1-4e9f-9b0b-cb2a4a162cf9"],
+Cell[123105, 2506, 154, 3, 28, InheritFromParent,ExpressionUUID->"3051c76d-b843-4bdc-89f2-c285bf939554"]
+}
+]
+*)
+
